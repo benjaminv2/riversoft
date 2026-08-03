@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riversoft - 完整響應式 Grid 系統</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+    <!-- Site header -->
+    <div class="container-fluid bg-main header-border">
+        <header class="site-header flex justify-between items-center header-padding">
+            <a href="index.html"><img src="images/logo.svg" alt="Riversoft"></a>
+
+            <nav id="primary-navigation" class="nav-links" aria-label="主要導覽">
+                <a href="#" class="text-light">關於Riversoft</a>
+                <a href="#" class="text-light nav-link-with-icon">
+                    核心技術
+                </a>
+
+                <div class="nav-item has-submenu">
+                    <button class="nav-dropdown-trigger text-accent" type="button" aria-expanded="false"
+                        aria-controls="products-submenu">
+                        產品與解決方案
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div id="products-submenu" class="nav-submenu">
+                        <a href="#">Optimus QA</a>
+                        <a href="#">機票+X</a>
+                        <a href="#">AgentGo</a>
+                        <a href="#">Agent IDP</a>
+                        <a href="#">系統整合與客製化開發</a>
+                    </div>
+                </div>
+
+                <a href="#" class="text-light nav-link-with-icon">
+                    產業應用案例
+                </a>
+                <a href="#" class="text-light">最新消息/活動</a>
+                <a href="#" class="text-light">聯絡我們</a>
+                <button class="language-btn" type="button" aria-label="切換語言">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                </button>
+            </nav>
+
+            <button class="menu-btn" type="button" aria-label="開啟導覽選單" aria-controls="primary-navigation"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </header>
+    </div>
+
+    <!-- Hero Section (Mobile First: 預設 grid-cols-1，lg 切換為 lg:grid-cols-2) -->
+    <div class="container-fluid bg-sub hero">
+        <div class="innder-content bg-sub">
+
+            <section class=" container hero-padding">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+
+                    <!-- 左側內容 -->
+                    <div class="flex flex-col gap-4">
+                        <div class="text-accent font-semibold text-lg">旅遊業 AI 問答系統</div>
+                        <h1 class="text-white">
+                            Optimus QA
+                            <span class="text-xl md:text-2xl font-semibold text-light flex flex-col gap-1">
+                                旅遊業客服的下一步：為什麼你的網站和 LINE，該有一位 24 小時的 AI 問答員？
+                            </span>
+                        </h1>
+                        <p class="text-light text-base">
+                            旅遊生意，是在「客人有衝動的那一刻」成交的。問題是——那一刻常發生在深夜、假日、連假前湧進的訊息裡，偏偏這些時段你的客服不是下班，就是被同樣的問題問到手軟。
+                        </p>
+                        <div>
+                            <a href="#" class="btn-primary">預約展示</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- 第一特色區塊 (固定最大寬度 1280px + 置中) -->
+    <section class="container section-padding-top">
+        <div class="text-center max-w-centered">
+            <h2 class="text-main">
+                不再靠「多請一個客服」，<br>而是導入一位讀過你所有資料的 AI
+            </h2>
+            <p class="text-sub text-base">
+                越來越多旅遊品牌，讓一位懂你所有行程與規則、24小時不打烊的 AI，同時守在網站和 LINE。這篇就用 Riversoft 的 OQA (OptimusQA)
+                為例，談談這件事怎麼做、怎麼裝、以及對旅遊生意實際帶來什麼。
+            </p>
+        </div>
+    </section>
+
+    <!-- 第二特色區塊：卡片列表 (利用自訂 .grid 系統) -->
+    <section class="container section-padding-bottom">
+        <div class="max-w-centered flex flex-col gap-6">
+
+            <div class="text-center">
+                <h2 class="text-main">
+                    旅遊客服最難的，<br>從來不是「回答」，是「即時」
+                </h2>
+                <p class="text-sub text-sm">
+                    旅遊業的客服壓力，有三個特性一般行業沒有。
+                </p>
+            </div>
+
+            <!-- 特色卡片 -->
+            <div class="card-gray flex items-center gap-4">
+                <div class="icon-box">⚡</div>
+                <div>
+                    <h3 class="text-lg font-bold text-main">尖峰極端 ｜ 訊息量瞬間翻倍</h3>
+                    <p class="text-sub text-sm">
+                        連假前、檔期開賣，訊息量瞬間翻倍，人力補不上。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/navigation.js" defer></script>
+</body>
+
+</html>

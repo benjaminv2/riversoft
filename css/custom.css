@@ -1,0 +1,53 @@
+/* =========================================
+   OptimusQA page styles
+   ========================================= */
+.header-padding {
+    /* padding-block: 1.25rem; */
+}
+
+.hero {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    background-color: #2F3D74;
+}
+
+.innder-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    background-color: #2F4288;
+    z-index: 2;
+    transform: translateY(-10%);
+}
+
+.hero-padding {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.section-padding-top {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.section-padding-bottom {
+    padding-bottom: 5rem;
+}
+
+.max-w-centered {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.preview-box {
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 4 / 3;
+    background: rgb(255 255 255 / 5%);
+    border: 2px dashed rgb(255 255 255 / 20%);
+    border-radius: 1.5rem;
+}
