@@ -47,6 +47,8 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     font-family: var(--font-sans);
     font-size: 1rem;
@@ -541,7 +543,7 @@ hr {
 }
 
 .py-8 {
-    padding-block: 2rem;
+    padding-block: 6rem;
 }
 
 /* =========================================

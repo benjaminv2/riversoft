@@ -1,9 +1,77 @@
 /* =========================================
    OptimusQA page styles
    ========================================= */
+.first-fix {
+    margin-top: -3rem;
+}
+
+.width-fix {
+    /* max-width: 90%; */
+}
+
+.card-1 {}
+
+.card-2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-3 {}
+
+.card-4 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-5 {}
 
 #oqa {
-    color: var(--c-light);
+    /* color: var(--c-light); */
+}
+
+#ticket-x .card-style-2 {
+    aspect-ratio: unset;
+}
+
+#ticket-x .card-2 {
+    width: 100%;
+}
+
+#ticket-x .card-style-2 .icon-box {
+    width: 6.2rem;
+    font-size: 3.6rem;
+}
+
+#ticket-x .card-style-3 {
+    border: 3px solid var(--c-sub);
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+    position: relative;
+    gap: 1rem;
+}
+
+#ticket-x .card-style-3:nth-child(-n+5)::after {
+    content: '';
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #b40909;
+}
+
+#ticket-x .step-number {
+    background-color: var(--c-sub);
+    border-radius: 9999px;
+}
+
+#ticket-x .card-style-5 {
+    border-radius: 10px 10px 30px 10px;
+    border-color: var(--c-accent);
 }
 
 #oqa .hero-tex1 {
@@ -51,6 +119,7 @@
     margin: 0;
     padding: 0;
     background-color: #2F3D74;
+    color: var(--c-light);
 }
 
 .innder-content {
@@ -73,7 +142,7 @@
 }
 
 .text-box {
-    max-width: 90%;
+    /* max-width: 90%; */
     margin: 5rem auto;
 }
 
@@ -81,7 +150,12 @@
     margin-bottom: 1rem;
 }
 
-.text-box p {margin-bottom: 1.5rem;font-weight: 500;color: var(--c-dark);margin-top: 1.5rem;}
+.text-box p {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: var(--c-dark);
+    margin-top: 1.5rem;
+}
 
 .hero-padding {
     /* padding-top: 4rem; */
@@ -110,4 +184,14 @@
     background: rgb(255 255 255 / 5%);
     border: 2px dashed rgb(255 255 255 / 20%);
     border-radius: 1.5rem;
+}
+
+.oqa-bg {
+    position: absolute;
+    right: 0rem;
+    bottom: -7rem;
+    z-index: 2;
+    width: 45%;
+    /* background: red; */
+    overflow: hidden;
 }

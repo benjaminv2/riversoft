@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riversoft - 完整響應式 Grid 系統</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body id="ticket-x">
+
+    <!-- Site header -->
+    <header class="site-header">
+        <a href="index.html"><img src="images/logo.svg" alt="Riversoft"></a>
+
+        <nav id="primary-navigation" class="nav-links" aria-label="主要導覽">
+            <a href="#" class="text-light">關於Riversoft</a>
+            <a href="#" class="text-light nav-link-with-icon">
+                核心技術
+            </a>
+
+            <div class="nav-item has-submenu">
+                <button class="nav-dropdown-trigger text-accent" type="button" aria-expanded="false"
+                    aria-controls="products-submenu">
+                    產品與解決方案
+                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="products-submenu" class="nav-submenu">
+                    <a href="OptimusQA.html">Optimus QA</a>
+                    <a href="ticket-x.html">機票+X平台</a>
+                    <a href="agent-go.html">AgentGo</a>
+                    <a href="agent-idp.html">Agent IDP</a>
+                    <a href="it-service.html">系統整合與客製化開發</a>
+                </div>
+            </div>
+
+            <a href="#" class="text-light nav-link-with-icon">
+                產業應用案例
+            </a>
+            <a href="#" class="text-light">最新消息/活動</a>
+            <a href="#" class="text-light">聯絡我們</a>
+            <button class="language-btn" type="button" aria-label="切換語言">
+                <i class="fa-solid fa-globe" aria-hidden="true"></i>
+            </button>
+        </nav>
+
+        <button class="menu-btn" type="button" aria-label="開啟導覽選單" aria-controls="primary-navigation"
+            aria-expanded="false">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+    </header>
+
+    <!-- Hero Section (Mobile First: 預設 grid-cols-1，lg 切換為 lg:grid-cols-2) -->
+    <div class="hero-image">
+        <img src="images/ticket-x.png" alt="ticket-x">
+    </div>
+    <div class="container-fluid bg-sub hero">
+
+        <div class="innder-content bg-sub">
+
+            <section class=" container">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+
+                    <!-- 左側內容 -->
+                    <div class="lg:col-span-8 flex gap-2 flex-col ">
+                        <!-- <span class="text-h4 hero-tex1"> 旅遊業 AI 問答系統</span> -->
+                        <h1 class="hero-tex2">
+                            機票+X 平台 </h1>
+                        <h2 class="text-h2 text-accent hero-tex4"><span class="highlight">一站整合，無限延伸</span></h2>
+
+                        <p class="hero-text5">
+                            將每一張機票，變成旅遊商品銷售的起點。<br>
+                            整合機票、飯店、行程、票券、接送、保險等多元旅遊服務，<br>
+                            打造企業專屬的一站式旅遊平台。 </p>
+                        <a href="#"><button class="btn-primary text-h5 ">預約產品展示</button></a>
+                    </div>
+
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <div class="container-fluid white relative first-fix">
+        <div class="container">
+            <!-- 第一特色區塊 (固定最大寬度 1280px + 置中) -->
+            <section class="section-padding-top">
+                <div class=" text-box width-fix">
+                    <h2 class="text-sub ">
+                        為什麼需要機票＋X平台？
+                    </h2>
+                    <div class="card-2 grid grid-cols-2 lg:grid-cols-6 gap-3">
+                        <div class="card-style-2">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="text-h5 text-white font-bold">機票毛利有限</h3>
+                                <div class="text-h6 text-white">提高商品附加價值</div>
+                            </div>
+                        </div>
+
+                        <div class="card-style-2">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="text-h5 text-white font-bold">商品分散難整合</h3>
+                                <div class="text-h6 text-white">集中管理多元旅遊商品</div>
+                            </div>
+                        </div>
+
+                        <div class="card-style-2">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="text-h5 text-white font-bold">缺乏交叉銷售</h3>
+                                <div class="text-h6 text-white">提升客單價</div>
+                            </div>
+                        </div>
+
+                        <div class="card-style-2">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="text-h5 text-white font-bold">會員經營不足</h3>
+                                <div class="text-h6 text-white">建立會員生態</div>
+                            </div>
+                        </div>
+                        <div class="card-style-2">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-desktop" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="text-h5 text-white font-bold">系統整合成本高</h3>
+                                <div class="text-h6 text-white">串接 CRM、ERP、金流</div>
+                            </div>
+                        </div>
+
+                        <div class="card-style-2">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="text-h5 text-white font-bold">營運效率不佳</h3>
+                                <div class="text-h6 text-white">降低人工流程。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- <div class="oqa-bg"><img src="images/OptimusQA-pic-intelligent-cs.png"> </div> -->
+
+    </div>
+    <div class="container">
+
+        <section class="section-padding-top">
+            <div class="text-box">
+                <h2 class="text-sub">完整旅遊電商流程</h2>
+                <div class="card-3 grid grid-cols-2 lg:grid-cols-6 gap-2">
+                    <div class="card-style-3"> <span class="step-number">1</span>
+
+                        <div class="operation-icon" aria-hidden="true">
+
+                            <i class="fa-solid fa-search"></i>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-h5 text-main font-bold mx-auto"> 搜尋航班</h3>
+                        </div>
+                        <!-- 搜尋航班 → 選擇航班 → AI推薦商品組合 → 填寫旅客資料 → 線上付款 → 完成訂單 -->
+                        <div class="text-h6 text-main mx-auto text-center">
+                            搜尋航班<br>與目的地 </div>
+                    </div>
+
+                    <div class="card-style-3"> <span class="step-number">2</span>
+
+                        <div class="operation-icon" aria-hidden="true">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <div class="flex items-center gap-3 ">
+                            <h3 class="text-h5 text-main font-bold mx-auto">選擇航班</h3>
+                        </div>
+                        <div class="text-h6 text-main mx-auto text-center">
+                            比價與篩選<br>最適合的航班
+                        </div>
+                    </div>
+
+                    <div class="card-style-3"> <span class="step-number">3</span>
+
+                        <div class="operation-icon" aria-hidden="true">
+                            <i class="fa-solid fa-box-open"></i>
+                            <span class="icon-secondary"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-h5 text-main font-bold mx-auto">AI推薦商品組合</h3>
+                        </div>
+                        <div class="text-h6 text-main mx-auto text-center">
+                            加購飯店、行程、<br>票券、接送、保險<br>等商品
+                        </div>
+                    </div>
+
+                    <div class="card-style-3"> <span class="step-number">4</span>
+
+                        <div class="operation-icon" aria-hidden="true">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="icon-secondary"><i class="fa-solid fa-file-alt"></i></span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-h5 text-main font-bold mx-auto">填寫旅客資料</h3>
+                        </div>
+                        <div class="text-h6 text-main mx-auto text-center">
+                            填寫旅客資料<br>與聯絡資訊
+                        </div>
+                    </div>
+                    <div class="card-style-3"> <span class="step-number">5</span>
+
+                        <div class="operation-icon" aria-hidden="true">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-h5 text-main font-bold mx-auto">線上付款</h3>
+                        </div>
+                        <div class="text-h6 text-main mx-auto  text-center">
+                            多元付款方式<br>安全結帳
+                        </div>
+                    </div>
+                    <div class="card-style-3"> <span class="step-number">6</span>
+
+                        <div class="operation-icon" aria-hidden="true">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-h5 text-main font-bold mx-auto">完成訂單</h3>
+                        </div>
+                        <div class="text-h6 text-main mx-auto text-center">
+                            訂單確認<br>發送憑證與通知
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <section class="container-fluid bg-sub py-8">
+        <div class="container flex flex-col gap-8">
+            <h2 class="text-white text-center">主要功能模組</h2>
+
+            <div class="card-5 grid benefit-grid gap-4">
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-plane" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">機票搜尋與預訂</h3>
+                    <div class="text-h6 text-white">整合全球航班即時查詢、比價與訂位</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-hotel" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">飯店預訂</h3>
+                    <div class="text-h6 text-white">串接全球飯店供應商，提供豐富房型與價格</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-map-marked-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">行程與當地體驗</h3>
+                    <div class="text-h6 text-white">團體旅遊、自由行、一日遊等多元行程</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-ticket-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">票券商城</h3>
+                    <div class="text-h6 text-white">景點門票、主題樂園、活動票券一站購足</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-car" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">接送服務</h3>
+                    <div class="text-h6 text-white">機場接送、包車服務，旅程更順暢便利</div>
+                </div>
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-shield-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">旅遊保險</h3>
+                    <div class="text-h6 text-white">多國保障方案，線上投保即時出單</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">會員中心</h3>
+                    <div class="text-h6 text-white">會員分級、點數、優惠券，提升會員黏著度</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-credit-card" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">金流整合</h3>
+                    <div class="text-h6 text-white">支援多元付款方式、信用卡、第三方金流等</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-file-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">訂單管理</h3>
+                    <div class="text-h6 text-white">訂購、付款、退款、退改簽一站式管理</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-cog" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">後台管理</h3>
+                    <div class="text-h6 text-white">商品、價格、庫存、訂單、報表完整管理</div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- SECTION3 -->
+    <div class="container">
+        <section class="section-padding-top">
+            <h2 class="text-main text-center">AI 智能推薦與服務</h2>
+
+            <div class="grid grid-cols-12 gap-4">
+                <!-- 左側佔 3 欄 -->
+                <div class="col-span-3">左側內容</div>
+
+                <!-- 中間佔 6 欄 -->
+                <div class="col-span-6"><img src="images/ai@4x.png" alt="ticket-x-preview"></div>
+
+                <!-- 右側佔 3 欄 -->
+                <div class="col-span-3">右側內容</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="container footer-contact">
+            <div class="footer-visual">
+                <img src="images/footer-pix.png" alt="Riversoft AI 解決方案示意圖">
+            </div>
+
+            <form class="footer-form" action="#" method="post">
+                <label class="footer-field">
+                    <span>姓名</span>
+                    <input type="text" name="name" autocomplete="name">
+                </label>
+
+                <label class="footer-field">
+                    <span>職稱</span>
+                    <input type="text" name="job-title" autocomplete="organization-title">
+                </label>
+
+                <label class="footer-field">
+                    <span>電話</span>
+                    <input type="tel" name="phone" autocomplete="tel">
+                </label>
+
+                <label class="footer-field">
+                    <span>電子信箱</span>
+                    <input type="email" name="email" autocomplete="email">
+                </label>
+
+                <div class="footer-form-row">
+                    <span>聯絡目的</span>
+                    <label class="footer-option"><input type="radio" name="purpose" value="support"> 客戶支援</label>
+                    <label class="footer-option"><input type="radio" name="purpose" value="inquiry"> 業務諮詢</label>
+                    <label class="footer-option"><input type="radio" name="purpose" value="partnership">
+                        商業合作</label>
+                    <label class="footer-option"><input type="radio" name="purpose" value="other"> 其他</label>
+                </div>
+
+                <div class="footer-form-row footer-actions">
+                    <label class="footer-option">
+                        <input type="checkbox" name="privacy" required>
+                        接受服務條款和隱私政策
+                    </label>
+                    <button class="btn-primary" type="submit">送出</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer-info">
+            <div class="container">
+                <div class="footer-brand-row">
+                    <img class="footer-logo" src="images/logo.svg" alt="Riversoft">
+                    <address class="footer-address">
+                        <div>台北市中山區長安東路一段18號6樓</div>
+                        <a href="tel:+886227318965">02-2731-8965</a>
+                    </address>
+                </div>
+
+                <div class="footer-meta">
+                    <div class="footer-emails">
+                        <a href="mailto:customer.support@riversoft.com.tw">客戶支援
+                            customer.support@riversoft.com.tw</a>
+                        <a href="mailto:inquiry@riversoft.com.tw">業務諮詢 inquiry@riversoft.com.tw</a>
+                        <a href="mailto:partnership@riversoft.com.tw">商業合作 partnership@riversoft.com.tw</a>
+                    </div>
+                    <div>Copyright © 2026 Riversoft Inc. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/navigation.js" defer></script>
+</body>
+
+</html>

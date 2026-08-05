@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
-<body>
+<body id="oqa">
 
     <!-- Site header -->
     <header class="site-header">
@@ -29,11 +29,11 @@
                     <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                 </button>
                 <div id="products-submenu" class="nav-submenu">
-                    <a href="#">Optimus QA</a>
-                    <a href="#">機票+X</a>
-                    <a href="#">AgentGo</a>
-                    <a href="#">Agent IDP</a>
-                    <a href="#">系統整合與客製化開發</a>
+                    <a href="OptimusQA.html">Optimus QA</a>
+                    <a href="ticket-x.html">機票+X平台</a>
+                    <a href="agent-go.html">AgentGo</a>
+                    <a href="agent-idp.html">Agent IDP</a>
+                    <a href="it-service.html">系統整合與客製化開發</a>
                 </div>
             </div>
 
@@ -57,7 +57,7 @@
     <div class="hero-image">
         <img src="images/hero-oqa.png" alt="Optimus QA">
     </div>
-    <div class="container-fluid bg-sub hero" id="oqa">
+    <div class="container-fluid bg-sub hero">
 
         <div class="innder-content bg-sub">
 
@@ -87,7 +87,7 @@
 
         </div>
     </div>
-    <div class="container-fluid white">
+    <div class="container-fluid white relative first-fix">
         <div class="container">
             <!-- 第一特色區塊 (固定最大寬度 1280px + 置中) -->
             <section class="section-padding-top">
@@ -117,6 +117,7 @@
 
 
                     <!-- 特色卡片 -->
+                    <div class="card-1">
                     <div class="card-gray card-style-1">
                         <div class="icon-box"><i class="fas fa-bolt"></i></div>
                         <div>
@@ -144,12 +145,16 @@
                             </div>
                         </div>
                     </div>
+                    </div>
 
-
+                </div>
             </section>
         </div>
+        <div class="oqa-bg"><img src="images/OptimusQA-pic-intelligent-cs.png"> </div>
+
     </div>
     <div class="container">
+
         <section class="section-padding-top">
             <div class="text-box">
                 <h2 class="text-sub">一位「讀過你所有資料」的 AI 問答員</h2>
@@ -169,9 +174,49 @@
             <div class="text-box">
                 <h2 class="text-sub">不只會「回答」，還會帶單</h2>
                 <p class="text-dark">
-                    OQA 內建幾個對旅遊特別有用的模組，勾一下就開。<br>
-
+                    OQA 內建幾個對旅遊特別有用的模組，勾一下就開。
                 </p>
+                <div class="card-2 grid grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card-style-2">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-h5 text-white font-bold">行程/商品推薦</h3>
+                            <div class="text-h6 text-white">根據客人講的需求，主動端出合適的行程</div>
+                        </div>
+                    </div>
+
+                    <div class="card-style-2">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-h5 text-white font-bold">價格試算</h3>
+                            <div class="text-h6 text-white">依網頁或資料庫的價目，直接算客人等總價</div>
+                        </div>
+                    </div>
+
+                    <div class="card-style-2">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-plane" aria-hidden="true"></i>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-h5 text-white font-bold">航班/交通/天氣</h3>
+                            <div class="text-h6 text-white">查未來航班、A 到 B 交通時間、當地天氣與五日預報</div>
+                        </div>
+                    </div>
+
+                    <div class="card-style-2">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-h5 text-white font-bold">即時網頁搜尋</h3>
+                            <div class="text-h6 text-white">需要最新資訊時，直接幫客人查好整理好</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <hr>
         </section>
@@ -194,6 +239,51 @@
             <div class="text-box">
                 <h2 class="text-sub">建立到上線，四步就好</h2>
                 <p class="text-dark">OQA 的建立流程是精靈式的，一步一步帶著走，全程不用工程師。</p>
+                <div class="card-3 grid grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card-style-3">
+                        <img src="images/OptimusQA-pic-operation_01.png" alt="選場景示意圖">
+                        <div class="flex items-center gap-3">
+                            <span class="step-number">1</span>
+                            <h3 class="text-h5 text-main font-bold">選場景</h3>
+                        </div>
+                        <div class="text-h6 text-main">
+                            先幫機器人定位「職務」。四種預成場景，各自預載了不同能力。
+                        </div>
+                    </div>
+
+                    <div class="card-style-3">
+                        <img src="images/OptimusQA-pic-operation_02.png" alt="上傳文件示意圖">
+                        <div class="flex items-center gap-3">
+                            <span class="step-number">2</span>
+                            <h3 class="text-h5 text-main font-bold">上傳文件</h3>
+                        </div>
+                        <div class="text-h6 text-main">
+                            把行程表、FAQ、退改與簽證政策丟進去，同時設定機器人名稱、問候語與人設。
+                        </div>
+                    </div>
+
+                    <div class="card-style-3">
+                        <img src="images/OptimusQA-pic-operation_03.png" alt="自訂外觀示意圖">
+                        <div class="flex items-center gap-3">
+                            <span class="step-number">3</span>
+                            <h3 class="text-h5 text-main font-bold">自訂外觀</h3>
+                        </div>
+                        <div class="text-h6 text-main">
+                            五個頁籤：基本、主題顏色、語言、頭像、跑馬燈，右側即時預覽（桌面／行動版）。
+                        </div>
+                    </div>
+
+                    <div class="card-style-3">
+                        <img src="images/OptimusQA-pic-operation_04.png" alt="整合設定示意圖">
+                        <div class="flex items-center gap-3">
+                            <span class="step-number">4</span>
+                            <h3 class="text-h5 text-main font-bold">整合設定</h3>
+                        </div>
+                        <div class="text-h6 text-main">
+                            OQA 產生「網站外掛程式碼」與「LINE 整合設定」，貼到你的通路就上線。
+                        </div>
+                    </div>
+                </div>
             </div>
             <hr>
         </section>
@@ -202,10 +292,164 @@
             <div class="text-box">
                 <h2 class="text-sub">用數據證明它有在幫你賺錢</h2>
                 <p class="text-dark">導入 AI 客服最怕「裝了不知道有沒有用」。OQA 的儀表板會把成效攤開給你看。</p>
+                <div class="card-4 grid grid-cols-4 gap-6">
+                    <div class="card-style-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-h5 text-main font-bold">總對話數</h3>
+                        <div class="text-h6 text-main">整體互動量</div>
+                    </div>
+
+                    <div class="card-style-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-h5 text-main font-bold">活躍用戶</h3>
+                        <div class="text-h6 text-main">真正使用的人</div>
+                    </div>
+
+                    <div class="card-style-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-square-check" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-h5 text-main font-bold">完成率</h3>
+                        <div class="text-h6 text-main">問題被解決的比例</div>
+                    </div>
+
+                    <div class="card-style-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-fire" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-h5 text-main font-bold">熱門主題</h3>
+                        <div class="text-h6 text-main">客人最常問什麼</div>
+                    </div>
+                </div>
             </div>
-            <hr>
+
         </section>
     </div>
+
+    <section class="container-fluid bg-sub py-8">
+        <div class="container flex flex-col gap-8">
+            <h2 class="text-white text-center">為什麼旅遊品牌首選 OptimusQA</h2>
+
+            <div class="card-5 grid benefit-grid gap-4">
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">擴展服務範圍</h3>
+                    <div class="text-h6 text-white">從客服問答延伸到旅遊服務</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">即時回覆</h3>
+                    <div class="text-h6 text-white">24/7 全天候即時支援</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">良好服務品質</h3>
+                    <div class="text-h6 text-white">從客服到銷售都維持一致品質</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-users" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">高效人員配置</h3>
+                    <div class="text-h6 text-white">真人專注高價值任務</div>
+                </div>
+
+                <div class="card-style-5">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-user-gear" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-h5 text-accent font-bold">個人化推薦</h3>
+                    <div class="text-h6 text-white">理解偏好並精準推薦</div>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <a href="#" class="btn-primary">與我們聊聊，從第一隻機器人開始 →</a>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="container footer-contact">
+            <div class="footer-visual">
+                <img src="images/footer-pix.png" alt="Riversoft AI 解決方案示意圖">
+            </div>
+
+            <form class="footer-form" action="#" method="post">
+                <label class="footer-field">
+                    <span>姓名</span>
+                    <input type="text" name="name" autocomplete="name">
+                </label>
+
+                <label class="footer-field">
+                    <span>職稱</span>
+                    <input type="text" name="job-title" autocomplete="organization-title">
+                </label>
+
+                <label class="footer-field">
+                    <span>電話</span>
+                    <input type="tel" name="phone" autocomplete="tel">
+                </label>
+
+                <label class="footer-field">
+                    <span>電子信箱</span>
+                    <input type="email" name="email" autocomplete="email">
+                </label>
+
+                <div class="footer-form-row">
+                    <span>聯絡目的</span>
+                    <label class="footer-option"><input type="radio" name="purpose" value="support"> 客戶支援</label>
+                    <label class="footer-option"><input type="radio" name="purpose" value="inquiry"> 業務諮詢</label>
+                    <label class="footer-option"><input type="radio" name="purpose" value="partnership">
+                        商業合作</label>
+                    <label class="footer-option"><input type="radio" name="purpose" value="other"> 其他</label>
+                </div>
+
+                <div class="footer-form-row footer-actions">
+                    <label class="footer-option">
+                        <input type="checkbox" name="privacy" required>
+                        接受服務條款和隱私政策
+                    </label>
+                    <button class="btn-primary" type="submit">送出</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer-info">
+            <div class="container">
+                <div class="footer-brand-row">
+                    <img class="footer-logo" src="images/logo.svg" alt="Riversoft">
+                    <address class="footer-address">
+                        <div>台北市中山區長安東路一段18號6樓</div>
+                        <a href="tel:+886227318965">02-2731-8965</a>
+                    </address>
+                </div>
+
+                <div class="footer-meta">
+                    <div class="footer-emails">
+                        <a href="mailto:customer.support@riversoft.com.tw">客戶支援
+                            customer.support@riversoft.com.tw</a>
+                        <a href="mailto:inquiry@riversoft.com.tw">業務諮詢 inquiry@riversoft.com.tw</a>
+                        <a href="mailto:partnership@riversoft.com.tw">商業合作 partnership@riversoft.com.tw</a>
+                    </div>
+                    <div>Copyright © 2026 Riversoft Inc. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="js/navigation.js" defer></script>
 </body>
 
