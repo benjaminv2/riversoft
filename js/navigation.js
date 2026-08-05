@@ -45,3 +45,25 @@ if (menuButton && navigation) {
         if (window.innerWidth >= 1024) setMenuState(false);
     });
 }
+
+document.querySelectorAll('.case-carousel').forEach((carousel) => {
+    const scroller = carousel.querySelector('.case-scroll');
+    const previousButton = carousel.querySelector('.case-arrow-prev');
+    const nextButton = carousel.querySelector('.case-arrow-next');
+
+    if (!scroller) return;
+
+    const scrollOneCard = (direction) => {
+        const card = scroller.querySelector('.case-card');
+        if (!card) return;
+
+        const gap = parseFloat(getComputedStyle(scroller).gap) || 0;
+        scroller.scrollBy({
+            left: direction * (card.getBoundingClientRect().width + gap),
+            behavior: 'smooth'
+        });
+    };
+
+    previousButton?.addEventListener('click', () => scrollOneCard(-1));
+    nextButton?.addEventListener('click', () => scrollOneCard(1));
+});

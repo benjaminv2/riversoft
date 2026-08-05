@@ -137,14 +137,23 @@
     line-height: 1.85rem;
 }
 
-.highlight {
+.highlight,
+.highlight2 {
     display: inline-block;
-    background-image: linear-gradient(to top, #3E5192 40%, transparent 40%);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-bottom: 2px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+}
+
+.highlight {
+    background-image: linear-gradient(to top, #3E5192 40%, transparent 40%);
+}
+
+/* 淺色背景使用，確保標題文字與標記色都有足夠對比 */
+.highlight2 {
+    background-image: linear-gradient(to top, #8bdcf76b 40%, transparent 40%);
 }
 
 .hero {
