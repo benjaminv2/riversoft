@@ -33,6 +33,10 @@
     aspect-ratio: unset;
 }
 
+#ticket-x .card-style-2.bg-light {
+    background-color: unset;
+}
+
 #ticket-x .card-2 {
     width: 100%;
 }
@@ -40,6 +44,12 @@
 #ticket-x .card-style-2 .icon-box {
     width: 6.2rem;
     font-size: 3.6rem;
+}
+
+#ticket-x .card-style-2.bg-light .icon-box {
+    width: 5rem;
+    font-size: 4.2em;
+    background-color: #9f9d9d3b;
 }
 
 #ticket-x .card-style-3 {
@@ -73,6 +83,31 @@
     border-radius: 10px 10px 30px 10px;
     border-color: var(--c-accent);
 }
+
+.center-style {
+    background-image: url(../images/ai@4x.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    padding: 3rem 0;
+    height: 35rem;
+    margin: 1rem auto;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.img-fix {
+    object-fit: fill;
+    position: absolute;
+    /* left: auto; */
+    right: 50%;
+    top: 0;
+    transform: translate(50%);
+    max-width: 150%;
+}
+
 
 #oqa .hero-tex1 {
     margin-bottom: -0.7rem;
