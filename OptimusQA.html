@@ -42,9 +42,19 @@
             </a>
             <a href="#" class="text-light">最新消息/活動</a>
             <a href="#" class="text-light">聯絡我們</a>
-            <button class="language-btn" type="button" aria-label="切換語言">
-                <i class="fa-solid fa-globe" aria-hidden="true"></i>
-            </button>
+            <div class="nav-item has-submenu language-menu">
+                <button class="language-btn" type="button" aria-label="切換語言" aria-expanded="false"
+                    aria-controls="language-submenu">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                </button>
+                <div id="language-submenu" class="nav-submenu language-submenu" aria-label="語言選擇">
+                    <button class="language-option" type="button" lang="en" data-lang="en">English</button>
+                    <button class="language-option" type="button" lang="zh-Hant" data-lang="zh-Hant"
+                        aria-current="true">繁體中文</button>
+                    <button class="language-option" type="button" lang="th" data-lang="th">ไทย</button>
+                    <button class="language-option" type="button" lang="ja" data-lang="ja">日本語</button>
+                </div>
+            </div>
         </nav>
 
         <button class="menu-btn" type="button" aria-label="開啟導覽選單" aria-controls="primary-navigation"

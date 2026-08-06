@@ -1,7 +1,6 @@
 const menuButton = document.querySelector('.menu-btn');
 const navigation = document.querySelector('#primary-navigation');
-const submenuTrigger = document.querySelector('.nav-dropdown-trigger');
-const submenuParent = submenuTrigger?.closest('.has-submenu');
+const submenuItems = navigation ? [...navigation.querySelectorAll('.has-submenu')] : [];
 
 if (menuButton && navigation) {
     const setMenuState = (isOpen) => {
@@ -14,35 +13,58 @@ if (menuButton && navigation) {
         icon?.classList.toggle('fa-xmark', isOpen);
     };
 
+    const closeSubmenus = (exception = null) => {
+        submenuItems.forEach((item) => {
+            if (item === exception) return;
+            item.classList.remove('submenu-open');
+            item.querySelector(':scope > button[aria-controls]')?.setAttribute('aria-expanded', 'false');
+        });
+    };
+
     menuButton.addEventListener('click', () => {
         setMenuState(menuButton.getAttribute('aria-expanded') !== 'true');
     });
 
     navigation.addEventListener('click', (event) => {
-        if (event.target.closest('a')) {
+        if (event.target.closest('a, .language-option')) {
             setMenuState(false);
-            submenuParent?.classList.remove('submenu-open');
-            submenuTrigger?.setAttribute('aria-expanded', 'false');
+            closeSubmenus();
         }
     });
 
-    submenuTrigger?.addEventListener('click', () => {
-        const isOpen = submenuTrigger.getAttribute('aria-expanded') !== 'true';
-        submenuParent?.classList.toggle('submenu-open', isOpen);
-        submenuTrigger.setAttribute('aria-expanded', String(isOpen));
+    submenuItems.forEach((item) => {
+        const trigger = item.querySelector(':scope > button[aria-controls]');
+        if (!trigger) return;
+
+        trigger.addEventListener('click', () => {
+            const isOpen = trigger.getAttribute('aria-expanded') !== 'true';
+            closeSubmenus(item);
+            item.classList.toggle('submenu-open', isOpen);
+            trigger.setAttribute('aria-expanded', String(isOpen));
+        });
+    });
+
+    navigation.querySelectorAll('.language-option').forEach((option) => {
+        option.addEventListener('click', () => {
+            navigation.querySelectorAll('.language-option').forEach((item) => item.removeAttribute('aria-current'));
+            option.setAttribute('aria-current', 'true');
+            option.blur();
+        });
     });
 
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
             setMenuState(false);
-            submenuParent?.classList.remove('submenu-open');
-            submenuTrigger?.setAttribute('aria-expanded', 'false');
+            closeSubmenus();
             menuButton.focus();
         }
     });
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1024) setMenuState(false);
+        if (window.innerWidth >= 1024) {
+            setMenuState(false);
+            closeSubmenus();
+        }
     });
 }
 

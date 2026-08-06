@@ -42,9 +42,19 @@
             </a>
             <a href="#" class="text-light">最新消息/活動</a>
             <a href="#" class="text-light">聯絡我們</a>
-            <button class="language-btn" type="button" aria-label="切換語言">
-                <i class="fa-solid fa-globe" aria-hidden="true"></i>
-            </button>
+            <div class="nav-item has-submenu language-menu">
+                <button class="language-btn" type="button" aria-label="切換語言" aria-expanded="false"
+                    aria-controls="language-submenu">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                </button>
+                <div id="language-submenu" class="nav-submenu language-submenu" aria-label="語言選擇">
+                    <button class="language-option" type="button" lang="en" data-lang="en">English</button>
+                    <button class="language-option" type="button" lang="zh-Hant" data-lang="zh-Hant"
+                        aria-current="true">繁體中文</button>
+                    <button class="language-option" type="button" lang="th" data-lang="th">ไทย</button>
+                    <button class="language-option" type="button" lang="ja" data-lang="ja">日本語</button>
+                </div>
+            </div>
         </nav>
 
         <button class="menu-btn" type="button" aria-label="開啟導覽選單" aria-controls="primary-navigation"
@@ -55,36 +65,36 @@
 
     <!-- Hero Section (Mobile First: 預設 grid-cols-1，lg 切換為 lg:grid-cols-2) -->
     <div class="hero-wrap">
-    <div class="container-fluid bg-sub hero">
+        <div class="container-fluid bg-sub hero">
 
-        <div class="innder-content bg-sub">
+            <div class="innder-content bg-sub">
 
-            <section class=" container">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+                <section class=" container">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
 
-                    <!-- 左側內容 -->
-                    <div class="lg:col-span-8 flex gap-2 flex-col ">
-                        <!-- <span class="text-h4 hero-tex1"> 旅遊業 AI 問答系統</span> -->
-                        <h1 class="hero-tex2">
-                            機票+X 平台 </h1>
-                        <h2 class="text-h2 text-accent hero-tex4"><span class="highlight">一站整合，無限延伸</span></h2>
+                        <!-- 左側內容 -->
+                        <div class="lg:col-span-8 flex gap-2 flex-col ">
+                            <!-- <span class="text-h4 hero-tex1"> 旅遊業 AI 問答系統</span> -->
+                            <h1 class="hero-tex2">
+                                機票+X 平台 </h1>
+                            <h2 class="text-h2 text-accent hero-tex4"><span class="highlight">一站整合，無限延伸</span></h2>
 
-                        <p class="hero-text5">
-                            將每一張機票，變成旅遊商品銷售的起點。<br>
-                            整合機票、飯店、行程、票券、接送、保險等多元旅遊服務，<br>
-                            打造企業專屬的一站式旅遊平台。 </p>
-                        <a href="#" class="hero-cta"><button class="btn-primary text-h5 ">預約產品展示</button></a>
+                            <p class="hero-text5">
+                                將每一張機票，變成旅遊商品銷售的起點。<br>
+                                整合機票、飯店、行程、票券、接送、保險等多元旅遊服務，<br>
+                                打造企業專屬的一站式旅遊平台。 </p>
+                            <a href="#" class="hero-cta"><button class="btn-primary text-h5 ">預約產品展示</button></a>
+                        </div>
+
+
                     </div>
+                </section>
 
-
-                </div>
-            </section>
-
+            </div>
         </div>
-    </div>
-    <div class="hero-image">
-        <img src="images/ticket-x.png" alt="Ticket-X 平台">
-    </div>
+        <div class="hero-image">
+            <img src="images/ticket-x.png" alt="Ticket-X 平台">
+        </div>
     </div>
     <div class="container-fluid white relative first-fix">
         <div class="container">
@@ -167,8 +177,9 @@
                     <div class="card-style-3"> <span class="step-number">1</span>
 
                         <div class="operation-icon" aria-hidden="true">
-
-                            <i class="fa-solid fa-search"></i>
+                            <span class="icon-composite">
+                                <i class="fa-solid fa-search"></i>
+                            </span>
                         </div>
                         <div class="flex items-center gap-3">
                             <h3 class="text-h5 text-main font-bold mx-auto"> 搜尋航班</h3>
@@ -181,7 +192,9 @@
                     <div class="card-style-3"> <span class="step-number">2</span>
 
                         <div class="operation-icon" aria-hidden="true">
-                            <i class="fa-solid fa-plane-departure"></i>
+                            <span class="icon-composite">
+                                <i class="fa-solid fa-plane-departure"></i>
+                            </span>
                         </div>
                         <div class="flex items-center gap-3 ">
                             <h3 class="text-h5 text-main font-bold mx-auto">選擇航班</h3>
@@ -194,8 +207,10 @@
                     <div class="card-style-3"> <span class="step-number">3</span>
 
                         <div class="operation-icon" aria-hidden="true">
-                            <i class="fa-solid fa-box-open"></i>
-                            <span class="icon-secondary"><i class="fa-solid fa-plus"></i></span>
+                            <span class="icon-composite">
+                                <i class="fa-solid fa-box-open"></i>
+                                <i class="fa-solid fa-plus icon-secondary"></i>
+                            </span>
                         </div>
                         <div class="flex items-center gap-3">
                             <h3 class="text-h5 text-main font-bold mx-auto">AI推薦商品組合</h3>
@@ -208,8 +223,10 @@
                     <div class="card-style-3"> <span class="step-number">4</span>
 
                         <div class="operation-icon" aria-hidden="true">
-                            <i class="fa-solid fa-user"></i>
-                            <span class="icon-secondary"><i class="fa-solid fa-file-alt"></i></span>
+                            <span class="icon-composite">
+                                <i class="fa-solid fa-user"></i>
+                                <i class="fa-solid fa-file-alt icon-secondary"></i>
+                            </span>
                         </div>
                         <div class="flex items-center gap-3">
                             <h3 class="text-h5 text-main font-bold mx-auto">填寫旅客資料</h3>
@@ -221,7 +238,9 @@
                     <div class="card-style-3"> <span class="step-number">5</span>
 
                         <div class="operation-icon" aria-hidden="true">
-                            <i class="fa-solid fa-credit-card"></i>
+                            <span class="icon-composite">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </span>
                         </div>
                         <div class="flex items-center gap-3">
                             <h3 class="text-h5 text-main font-bold mx-auto">線上付款</h3>
@@ -233,7 +252,9 @@
                     <div class="card-style-3"> <span class="step-number">6</span>
 
                         <div class="operation-icon" aria-hidden="true">
-                            <i class="fa-solid fa-clipboard-check"></i>
+                            <span class="icon-composite">
+                                <i class="fa-solid fa-clipboard-check"></i>
+                            </span>
                         </div>
                         <div class="flex items-center gap-3">
                             <h3 class="text-h5 text-main font-bold mx-auto">完成訂單</h3>
@@ -525,7 +546,7 @@
 
         <section class="section-padding-top section-padding-bottom">
             <div class="grid grid-cols-12 gap-6 items-start">
-                <div class="col-span-12 lg:col-span-9">
+                <div class="col-span-12 lg:col-span-12">
                     <h2 class="text-main text-center mb-6"><span class="highlight2">成功案例</span></h2>
                     <div class="case-carousel">
                         <button class="case-arrow case-arrow-prev" type="button" aria-label="上一個成功案例">
@@ -577,7 +598,7 @@
                     </div>
                 </div>
 
-                <div class="col-span-12 lg:col-span-3">
+                <div class="col-span-12 lg:col-span-12">
                     <h2 class="text-main text-center mb-6"><span class="highlight2">常見問題</span></h2>
                     <div class="grid gap-2">
                         <details class="rounded-md p-2">
