@@ -182,15 +182,15 @@
 .icon-composite > .icon-secondary {
     position: absolute;
     z-index: 2;
-    right: var(--icon-secondary-right, 0.08em);
-    bottom: var(--icon-secondary-bottom, 0.08em);
+    right: var(--icon-secondary-right, -1.12em);
+    bottom: var(--icon-secondary-bottom, -0.12em);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: var(--icon-secondary-box, auto);
     aspect-ratio: 1;
-    padding: var(--icon-secondary-padding, 0.15em);
-    font-size: var(--icon-secondary-size, 0.36em);
+    padding: var(--icon-secondary-padding, 0.45em);
+    font-size: var(--icon-secondary-size, 0.32em);
     line-height: 1;
     color: var(--icon-secondary-color, var(--c-accent));
     background-color: var(--icon-secondary-bg, var(--c-light));
@@ -313,7 +313,7 @@
     text-align: center;
     background-color: #ffffff;
     border-radius: var(--radius-lg);
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
     justify-content: center;
 }
 
@@ -339,7 +339,7 @@
     background-color: #ffffff08;
     border: 2px solid var(--c-light);
     border-radius: 50px 50px 30px 30px;
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
     justify-content: center;
 }
 
@@ -383,6 +383,8 @@
     /* color: var(--c-sub); */
     /* background-color: var(--c-dark); */
     border-radius: var(--radius-full);
+    white-space: nowrap;
+    letter-spacing: -0.3rem;
 }
 
 .card-style-6 h3 {

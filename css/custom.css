@@ -29,8 +29,14 @@
     /* color: var(--c-light); */
 }
 
+#agent-go .pain-point-grid .card-style-1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 /* OptimusQA mobile cards */
-.site-header > a > img {
+.site-header>a>img {
     width: 160px;
     height: auto;
     padding-left: 0.8rem;
@@ -53,6 +59,23 @@
 #oqa .card-style-2 {
     aspect-ratio: unset;
 }
+
+#agent-go .card-style-2 {
+    aspect-ratio: unset;
+}
+#agent-go .card-style-5{
+    border:0;
+    justify-content:flex-start;
+     background-color:unset;
+    aspect-ratio:unset;
+}
+#agent-go .card-style-5 .icon-box{
+    margin-right:0;
+   
+    padding:0
+    
+}
+#agent-go .card-style-4{}
 
 #oqa .card-style-4 {
     min-height: 0;
@@ -88,7 +111,7 @@
 }
 
 #oqa .card-style-5 h3,
-#oqa .card-style-5 > div:last-child {
+#oqa .card-style-5>div:last-child {
     grid-column: 2;
     align-self: center;
 }
@@ -174,7 +197,7 @@
     margin: 1rem auto;
 }
 
-#ticket-x .center-style > div:empty {
+#ticket-x .center-style>div:empty {
     display: none;
 }
 
@@ -229,6 +252,7 @@
     padding-bottom: 2px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+    margin-bottom: 1rem;
 }
 
 .highlight {
@@ -363,6 +387,11 @@
     #ticket-x .case-card {
         flex-basis: calc((100% - 1.5rem) / 2.5);
     }
+
+    #agent-go .pain-point-grid .card-style-1 {
+        flex-direction: row;
+        text-align: left;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -378,7 +407,7 @@
         margin-top: -3rem;
     }
 
-    .site-header > a > img {
+    .site-header>a>img {
         width: auto;
         height: 36px;
     }
@@ -476,7 +505,7 @@
         background-position: center;
     }
 
-    #ticket-x .center-style > div:empty {
+    #ticket-x .center-style>div:empty {
         display: block;
     }
 
@@ -499,7 +528,7 @@
 
     .hero-wrap {
         display: block;
-        overflow:visible;
+        overflow: visible;
     }
 
     .innder-content {

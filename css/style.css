@@ -76,7 +76,7 @@ h1 {
 /* 96px */
 h2 {
     font-size: var(--font-size-h2);
-    line-height: 1.25;
+    line-height: 1.45;
     font-weight: 900;
 }
 
