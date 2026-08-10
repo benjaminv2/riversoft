@@ -63,19 +63,21 @@
 #agent-go .card-style-2 {
     aspect-ratio: unset;
 }
-#agent-go .card-style-5{
-    border:0;
-    justify-content:flex-start;
-     background-color:unset;
-    aspect-ratio:unset;
+
+#agent-go .card-style-5 {
+    border: 0;
+    justify-content: flex-start;
+    background-color: unset;
+    aspect-ratio: unset;
 }
-#agent-go .card-style-5 .icon-box{
-    margin-right:0;
-   
-    padding:0
-    
+
+#agent-go .card-style-5 .icon-box {
+    margin-right: 0;
+
+    padding: 0
 }
-#agent-go .card-style-4{}
+
+#agent-go .card-style-4 {}
 
 #oqa .card-style-4 {
     min-height: 0;
@@ -197,7 +199,21 @@
     margin: 1rem auto;
 }
 
+#optimus-agent .center-style {
+    background-image: url(../images/meta-agent-con.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    padding: 16.5rem 0 0;
+    height: auto;
+    margin: 1rem auto;
+}
+
 #ticket-x .center-style>div:empty {
+    display: none;
+}
+
+#optimus-agent .center-style>div:empty {
     display: none;
 }
 
@@ -282,6 +298,31 @@
     color: var(--c-light);
 }
 
+#optimus-agent .hero-wrap {
+    background-color: #eff3f5;
+    color: var(--c-main);
+}
+
+#optimus-agent .hero {
+    color: var(--c-main);
+    clip-path: none;
+    background-image:
+        url('../images/colored-bubbles-06.png'),
+        linear-gradient(180deg, #fff 0%, #eff3f5 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: contain, cover;
+    background-color: var(--c-bg);
+    min-height: 685px;
+}
+
+#optimus-agent .innder-content {
+    color: var(--c-main);
+    background: transparent;
+    clip-path: none;
+    padding-top: 243px;
+}
+
 .innder-content {
     position: relative;
     z-index: 3;
@@ -313,10 +354,10 @@
 }
 
 .text-box p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
     color: var(--c-dark);
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .hero-padding {
@@ -505,6 +546,42 @@
         background-position: center;
     }
 
+    #ticket-x .center-style>div:empty {
+        display: block;
+    }
+
+    #optimus-agent .center-style {
+        height: 34rem;
+        padding: 3rem 0;
+        background-size: 43%;
+        background-position: center;
+    }
+
+    #optimus-agent .center-style>div:empty {
+        display: block;
+    }
+   .optimus-agent-img{
+                     width:90%;
+                     margin: 1rem auto;
+                     background-color:var(--c-light);
+                     padding:2rem;
+                     border: 1px solid var(--c-sub);
+                     border-radius:1.5rem
+                     }
+    .agent-num{font-size:9rem;letter-spacing: -13px;line-height: 0.7;}
+    .agent-box{
+    border-radius: 30px;
+    border: 3px solid #e5e5e5;
+    padding: 4rem;
+    width: 85%;
+    margin: 0 auto;
+    }
+    #optimus-agent .card-style-5
+    {aspect-ratio:1/0.9;border-color:#ffffff1c
+    }
+ #optimus-agent .card-style-2
+    {aspect-ratio:unset;
+    }
     #ticket-x .center-style>div:empty {
         display: block;
     }

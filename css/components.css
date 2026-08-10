@@ -182,7 +182,7 @@
 .icon-composite > .icon-secondary {
     position: absolute;
     z-index: 2;
-    right: var(--icon-secondary-right, -1.12em);
+    right: var(--icon-secondary-right, 0.28em);
     bottom: var(--icon-secondary-bottom, -0.12em);
     display: inline-flex;
     align-items: center;
@@ -541,6 +541,13 @@
     color: #ffffff;
 }
 
+.content-callout {
+    padding: 1rem 1.25rem;
+    border-left: 8px solid var(--c-accent);
+    color: #5e5e5f !important;
+    background-color: #efefef !important;
+}
+
 .footer-meta {
     display: flex;
     gap: 1rem 2rem;
@@ -672,7 +679,7 @@
 }
 
 .card-text {
-    margin-top: -1.2rem
+    /* margin-top: -1.2rem; */
 }
 
 @media (min-width: 1024px) {

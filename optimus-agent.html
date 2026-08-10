@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentGo 智慧旅遊營運平台｜Riversoft</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body id="optimus-agent">
+
+    <!-- Site header -->
+    <header class="site-header">
+        <a href="index.html"><img src="images/logo.svg" alt="Riversoft"></a>
+
+        <nav id="primary-navigation" class="nav-links" aria-label="主要導覽">
+            <a href="#" class="text-light">關於Riversoft</a>
+            <a href="optimus-agent.html" class="text-light nav-link-with-icon">
+                核心技術
+            </a>
+
+            <div class="nav-item has-submenu">
+                <button class="nav-dropdown-trigger text-accent" type="button" aria-expanded="false"
+                    aria-controls="products-submenu">
+                    產品與解決方案
+                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="products-submenu" class="nav-submenu">
+                    <a href="OptimusQA.html">Optimus QA</a>
+                    <a href="ticket-x.html">機票+X平台</a>
+                    <a href="agent-go.html">AgentGo</a>
+                    <a href="agent-idp.html">Agent IDP</a>
+                    <a href="it-service.html">系統整合與客製化開發</a>
+                </div>
+            </div>
+
+            <a href="#" class="text-light nav-link-with-icon">
+                產業應用案例
+            </a>
+            <a href="#" class="text-light">最新消息/活動</a>
+            <a href="#" class="text-light">聯絡我們</a>
+            <div class="nav-item has-submenu language-menu">
+                <button class="language-btn" type="button" aria-label="切換語言" aria-expanded="false"
+                    aria-controls="language-submenu">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                </button>
+                <div id="language-submenu" class="nav-submenu language-submenu" aria-label="語言選擇">
+                    <button class="language-option" type="button" lang="en" data-lang="en">English</button>
+                    <button class="language-option" type="button" lang="zh-Hant" data-lang="zh-Hant"
+                        aria-current="true">繁體中文</button>
+                    <button class="language-option" type="button" lang="th" data-lang="th">ไทย</button>
+                    <button class="language-option" type="button" lang="ja" data-lang="ja">日本語</button>
+                </div>
+            </div>
+        </nav>
+
+        <button class="menu-btn" type="button" aria-label="開啟導覽選單" aria-controls="primary-navigation"
+            aria-expanded="false">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+    </header>
+
+    <!-- Hero Section (Mobile First: 預設 grid-cols-1，lg 切換為 lg:grid-cols-2) -->
+    <div class="hero-wrap">
+        <div class="container-fluid bg-sub hero">
+
+            <div class="innder-content bg-sub">
+
+                <section class=" container">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+
+                        <!-- 左側內容 -->
+                        <div class="lg:col-span-8 flex gap-2 flex-col ">
+                            <!-- <span class="text-h4 hero-tex1">智慧旅遊營運平台</span> -->
+                            <h2 class="hero-tex2">
+                                讓企業的知識變成 </h2>
+                            <h1 class="highlight2">真正會做事的 AI</h1>
+
+                            <!-- <h2 class="text-h2 text-accent hero-tex4"><span class="highlight">讓企業的知識
+                                    變成真正會做事的 AI</span></h2> -->
+
+                            <p class="hero-text5 text-dark">
+                                Riversoft 的技術，圍繞一個核心目標：
+                                讓企業能安全、可控地把自己的知識，變成真正會做事的 AI — Meta Agent。
+                                四項核心技術各司其職、彼此相扣。
+
+                            </p>
+                            <a href="#" class="hero-cta"><button class="btn-primary text-h5 ">預約產品展示</button></a>
+                        </div>
+
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/meta-agent.png" alt="AgentGo">
+        </div>
+    </div>
+    <main>
+        <div class="container-fluid  relative first-fix">
+            <section class="container section-padding-top">
+                <div class="text-box">
+                    <h2 class="text-sub"><span class="highlight2">四項核心技術，彼此相扣</span></h2>
+                    <h4 class="text-dark text-h4 mb-8">一般聊天機器人只會「一問一答」。<br>Meta Agent 由四項技術協同運作，把企業知識轉化為可執行、可驗證、可私有化的 AI
+                        生產力。
+                    </h4>
+                    <div class="grid grid-cols-12 gap-4 center-style mt-8">
+                        <!-- 左側佔 3 欄 -->
+                        <div class="card-1 col-span-12 lg:col-span-4 flex flex-col justify-between h-full">
+                            <div class="card-gray card-style-1">
+                                <div class="icon-box icon-composite">
+                                    <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                                    <span class="icon-badge">AGENT</span>
+                                </div>
+                                <div>
+                                    <!-- <span class="text-small text-accent">01 · WORKFLOW</span> -->
+                                    <p class="text-h5"><span class="font-bold">Meta Agent Workflow</span></p>
+                                    <div>讓 AI 照著「工作流程」把事情做完，而且每一步都自我把關。</div>
+                                </div>
+                            </div>
+
+                            <div class="card-gray card-style-1">
+                                <div class="icon-box icon-composite">
+                                    <i class="fa-solid fa-project-diagram" aria-hidden="true"></i>
+                                    <span class="icon-badge">ONTO</span>
+                                </div>
+                                <div>
+                                    <!-- <p class="text-small text-accent font-bold">02 · ONTOLOGY</p> -->
+                                    <p class="text-h5"><span class="font-bold">Ontology</span></p>
+                                    <div>讓 AI 的答案又準、又說得出根據，不再是黑盒子。</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 中間佔 6 欄 -->
+                        <div class="col-span-12 lg:col-span-4 relative"></div>
+
+                        <!-- 右側佔 3 欄 -->
+                        <div class="card-1 col-span-12 lg:col-span-4 flex flex-col justify-between h-full">
+                            <div class="card-gray card-style-1">
+                                <div class="icon-box icon-composite">
+                                    <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                                    <span class="icon-badge">MCP</span>
+                                </div>
+                                <div>
+                                    <!-- <p class="text-small text-accent font-bold">03 · MCP</p> -->
+                                    <p class="text-h5"><span class="font-bold">Model Context Protocol</span></p>
+                                    <div>AI 世界的通用轉接頭，讓 AI 安全接上企業現有系統。</div>
+                                </div>
+                            </div>
+
+                            <div class="card-gray card-style-1">
+                                <div class="icon-box icon-composite">
+                                    <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-server icon-secondary" aria-hidden="true"></i>
+                                    <span class="icon-badge">HYBRID</span>
+                                </div>
+                                <div>
+                                    <!-- <p class="text-small text-accent font-bold">04 · HYBRID</p> -->
+                                    <p class="text-h5"><span class="font-bold">Frontier / Local / Hybrid 智慧調度</span></p>
+                                    <div>依任務與資料敏感度自動選模型；隱私資料去識別化後才送雲端。</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="optimus-agent-img">
+                        <img src="images/agent-1.png" alt="riversoft agent">
+                    </div>
+                </div>
+            </section>
+            <div class="container-fluid white relative first-fix">
+                <section class="container section-padding-top">
+                    <h2 class="text-sub"><span class="highlight2">四大技術，逐一拆解</span></h2>
+                    <h4 class="text-dark text-h4 mb-8">每項技術都有明確定位、核心特色與適用場景，並附上運作流程。</h4>
+                    <div class="agent-box text-main">
+                        <div class="text-h1 text-accent font-black agent-num">01</div>
+                        <h2 class="highlight2">Meta Agent Workflow</h2>
+                        <h4 class="text-main mb-8">像招募員工一樣，用「講的」就能打造會做事的 AI 工作流程</h4>
+
+                        <p class="text-h6  mb-8">
+                            一般聊天機器人只會一問一答；Meta Agent Workflow 打造的，是一條<strong class="highlight2">會照步驟把工作完成</strong>的 AI
+                            工作流程<br>你用白話描述需求，它就拆解成一連串步驟（理解需求 → 知識地圖核對條件 → 執行工作 →
+                            產出結果），<strong>先確認條件成立才動手</strong>，一步步把事情做完，例如幫旅行社算報價、幫客服查訂單並處理退換貨。
+                        </p>
+
+                        <div class="grid grid-cols-12 gap-4">
+                            <ul class="text-h6 agent-list col-span-12 md:col-span-12">
+                                <li>用「講的」就能建立會做事的 AI 工作流程，<strong>全程不用寫程式</strong></li>
+                                <li>流程每一步都<strong>先把關、再執行</strong>，答案不亂編</li>
+                                <li>企業知識與資料貫穿「聽需求・把關・執行」全程</li>
+                                <li>要調整時用對話就能改，不必重做</li>
+                                <li>換產業只要換知識，不必重寫流程</li>
+                                <li>每個客戶的資料與權限彼此隔離</li>
+                            </ul>
+                            <div class="optimus-agent-img col-span-12 md:col-span-12">
+                                <img src="images/agent-1.png" alt="riversoft agent">
+                            </div>
+                        </div>
+
+                        <p class="content-callout text-h6">
+                            <strong class="font-bold">與市場差異化：</strong>市面上多數「AI Agent」只是一大段 prompt ＋ 一問一答；Optimus
+                            是「可組裝、每一步都能驗證」的工作流程，兼顧 AI 的靈活與答案的可靠。
+                        </p>
+                        <hr>
+                    </div>
+                </section>
+
+                <section class="container section-padding-top">
+                    <div class="agent-box text-main">
+                        <div class="text-h1 text-accent font-black agent-num">02</div>
+                        <h2 class="highlight2">Ontology</h2>
+                        <h4 class="text-main mb-8">幫 AI 把答案查得又準、又說得出根據</h4>
+
+                        <p class="text-h6 mb-8">
+                            一般 AI 找資料只看「意思像不像」，遇到有明確條件的問題（例如「5 天、兩人、預算 3 萬」）容易挑錯。Ontology
+                            把企業知識整理成一張定義清楚、有關係與規則的<strong>「知識地圖」</strong>；在語意比對之外多一道核對條件，答得更準，也說得出「為什麼是這個答案」。
+                        </p>
+
+                        <div class="grid grid-cols-12 gap-4">
+                            <ul class="text-h6 agent-list col-span-12 md:col-span-12">
+                                <li>語意比對＋知識地圖<strong>核對條件</strong>，答得更準</li>
+                                <li>答案有根據、<strong>可解釋</strong>，不是黑盒子</li>
+                                <li>支援多語系，不限特定語言</li>
+                            </ul>
+                            <div class="optimus-agent-img col-span-12 md:col-span-12">
+                                <img src="images/agent-2.png" alt="Ontology 知識地圖">
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="container section-padding-top">
+                    <div class="agent-box text-main">
+                        <div class="text-h1 text-accent font-black agent-num">03</div>
+                        <h2 class="highlight2">MCP · Model Context Protocol</h2>
+                        <h4 class="text-main mb-8">AI 世界的「通用轉接頭」，把企業既有系統接上 AI</h4>
+
+                        <p class="text-h6 mb-8">
+                            企業早就有訂單、庫存、客戶、ERP 等系統。MCP 是一套業界通用的「轉接頭」標準，讓 AI
+                            不用改動這些系統，就能安全地讀資料、甚至代為下單。例如我們把一套旅遊 ERP 包成 <strong>AI 可用的工具</strong>，新增功能只要改設定、不必重寫程式。
+                        </p>
+
+                        <div class="grid grid-cols-12 gap-4">
+                            <ul class="text-h6 agent-list col-span-12 md:col-span-8">
+                                <li>用業界通用標準接上企業系統，<strong>不必更換原系統</strong></li>
+                                <li>一套旅遊 ERP 已接成 AI 工具</li>
+                                <li>加功能改設定就好，不必重寫程式</li>
+                            </ul>
+                            <div class="optimus-agent-img col-span-12 md:col-span-4">
+                                <img src="images/agent-3.png" alt="MCP 系統串接架構">
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="container section-padding-top">
+                    <div class="agent-box text-main">
+                        <div class="text-h1 text-accent font-black agent-num">04</div>
+                        <h2 class="highlight2">Frontier / Local / Hybrid 智慧調度</h2>
+                        <h4 class="text-main mb-8">隱私資料在送給雲端模型之前，一定先去識別化</h4>
+
+                        <p class="text-h6 mb-8">
+                            金融、醫療、政府最在意的一件事，就是「資料不能外流」。但「全上雲」品質好卻有疑慮，「全地端」安全卻綁手綁腳。Riversoft
+                            不做二選一：系統會依<strong>任務難度與資料敏感度</strong>自動調度——最敏感的留在企業內部的 <strong>Local
+                                模型</strong>；需要複雜推理時才走 <strong>Frontier
+                                雲端模型</strong>，而且送出前先做<strong>去識別化</strong>（遮蔽姓名、身分證號、聯絡方式等個資），還原對照只留在企業端。雲端模型永遠看不到可識別到人的資料。
+                        </p>
+
+                        <div class="grid grid-cols-12 gap-4">
+                            <ul class="text-h6 agent-list col-span-12 md:col-span-8">
+                                <li><strong>去識別化</strong>後才送雲端模型，還原對照留在企業端</li>
+                                <li><strong>Local：</strong>敏感任務用企業內部模型，資料完全不出境</li>
+                                <li><strong>Frontier：</strong>複雜推理交給雲端旗艦模型，品質不打折</li>
+                                <li><strong>Hybrid：</strong>依任務與敏感度自動選擇，不必人工判斷</li>
+                                <li>元件可裝進客戶自己的機房，每個客戶資料嚴格隔離</li>
+                            </ul>
+                            <div class="optimus-agent-img col-span-12 md:col-span-4">
+                                <img src="images/agent-4.png" alt="Frontier、Local 與 Hybrid 智慧調度">
+                            </div>
+                        </div>
+
+                        <p class="content-callout text-h6">
+                            <strong class="font-bold">與市場差異化：</strong>不只提供雲端單一形態，從設計就把「資料主權」放進來——同時拿到雲端模型的品質與地端的隱私保障。
+                        </p>
+
+                        <hr>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="container-fluid bg-sub py-8">
+            <div class="container flex flex-col gap-8">
+                <h2 class="text-white text-center"><span class="highlight">技術優勢</span></h2>
+                <p class="text-h5 text-white text-center">
+                    關鍵優勢來自「讓 AI 負責思考、讓規則負責把關」的架構——它同時解決了一般 AI
+                    最痛的三件事：會亂編、很燒錢、難信任。
+                </p>
+
+                <div class="card-5 grid grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="card-style-5">
+                        <div class="text-h1 text-white font-black">69<span class="text-h4">%</span></div>
+                        <h3 class="text-h5 text-accent font-bold">單次 token 節省</h3>
+                        <div class="text-h6 text-white">以旅遊行程規劃為例，相較純 AI 做法，單次可省下約 69% 的 token、成本約降 6 成。</div>
+                    </div>
+
+                    <div class="card-style-5">
+                        <div class="icon-box"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></div>
+                        <h3 class="text-h5 text-accent font-bold">答案不亂編</h3>
+                        <div class="text-h6 text-white">每個關鍵輸出，都用知識圖譜做一次「邏輯驗證」——例如「餐廳是否真的無過敏原」由形式邏輯確認，而非 AI
+                            憑感覺。從架構上把幻覺擋下來。</div>
+                    </div>
+
+                    <div class="card-style-5">
+                        <div class="icon-box icon-composite">
+                            <i class="fa-solid fa-sack-dollar" aria-hidden="true"></i>
+                            <i class="fa-solid fa-arrow-down icon-secondary" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-h5 text-accent font-bold">成本大幅下降</h3>
+                        <div class="text-h6 text-white">AI 只需呼叫一次，把問題「編譯」成一條規則，之後的驗證交給一般 CPU 執行——幾乎不耗 token、毫秒內完成。</div>
+                    </div>
+
+                    <div class="card-style-5">
+                        <div class="icon-box"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></div>
+                        <h3 class="text-h5 text-accent font-bold">越用越便宜、越快</h3>
+                        <div class="text-h6 text-white">驗證過的邏輯會被記住、重複利用；遇到相似問題直接跳過 AI 運算。系統跑得越久，反而越省、越快。</div>
+                    </div>
+
+                    <div class="card-style-5">
+                        <div class="icon-box icon-composite">
+                            <i class="fa-solid fa-user" aria-hidden="true"></i>
+                            <i class="fa-solid fa-shield-halved icon-secondary" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-h5 text-accent font-bold">越權防呆、更安全</h3>
+                        <div class="text-h6 text-white">在 AI 真正動手前，就先驗證它有沒有權限；結構上阻止越權操作，避免遇到權限錯誤時反覆嘗試繞過、空燒資源。</div>
+                    </div>
+
+                    <div class="card-style-5">
+                        <div class="icon-box"><i class="fa-solid fa-magnifying-glass-minus" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-h5 text-accent font-bold">找不到也不亂給</h3>
+                        <div class="text-h6 text-white">當條件無法完全滿足時，系統會有序地放寬條件、給出最接近的可行方案，而不是編一個假的、或直接當掉。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section-padding-top">
+            <h2 class="text-main text-center"><span class="highlight2">應用場景</span></h2>
+            <p class="text-main text-h5 text-center mb-8">同一套技術，換上不同領域的知識，就能落地到多種產業。</p>
+
+            <div class="card-2 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card-style-2">
+                    <div class="icon-box icon-composite">
+                        <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                        <i class="fa-solid fa-comment-dots icon-secondary" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">
+                        <!-- <p class="text-h6 text-accent font-bold">CUSTOMER SERVICE</p> -->
+                        <h3 class="text-h5 text-white font-bold">智慧客服</h3>
+                        <div class="text-h6 text-white">以企業知識庫即時問答、自動處理重複詢問，並接上訂單/CRM 系統。</div>
+                    </div>
+                </div>
+
+                <div class="card-style-2">
+                    <div class="icon-box"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i></div>
+                    <div class="text-center">
+                        <!-- <p class="text-h6 text-accent font-bold">HEALTHCARE</p> -->
+                        <h3 class="text-h5 text-white font-bold">醫療 AI</h3>
+                        <div class="text-h6 text-white">提供有根據、說得出來源的專業問答；私有化部署守護敏感資料。</div>
+                    </div>
+                </div>
+
+                <div class="card-style-2">
+                    <!-- <span class="bg-accent text-main font-bold rounded-full px-4 py-2">技術最成熟</span> -->
+                    <div class="icon-box icon-composite">
+                        <i class="fa-solid fa-plane" aria-hidden="true"></i>
+                        <i class="fa-solid fa-gears icon-secondary" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">
+                        <!-- <p class="text-h6 text-accent font-bold">TRAVEL TECH</p> -->
+                        <h3 class="text-h5 text-white font-bold">旅遊科技</h3>
+                        <div class="text-h6 text-white">行程與商品推薦、旅遊 ERP 整合、多語查詢，是 Riversoft 技術最成熟的落地領域。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="site-footer">
+            <div class="container footer-contact">
+                <div class="footer-visual">
+                    <img src="images/footer-pix.png" alt="Riversoft AI 解決方案示意圖">
+                </div>
+
+                <form class="footer-form" action="#" method="post">
+                    <label class="footer-field">
+                        <span>姓名</span>
+                        <input type="text" name="name" autocomplete="name">
+                    </label>
+
+                    <label class="footer-field">
+                        <span>職稱</span>
+                        <input type="text" name="job-title" autocomplete="organization-title">
+                    </label>
+
+                    <label class="footer-field">
+                        <span>電話</span>
+                        <input type="tel" name="phone" autocomplete="tel">
+                    </label>
+
+                    <label class="footer-field">
+                        <span>電子信箱</span>
+                        <input type="email" name="email" autocomplete="email">
+                    </label>
+
+                    <div class="footer-form-row">
+                        <span>聯絡目的</span>
+                        <label class="footer-option"><input type="radio" name="purpose" value="support"> 客戶支援</label>
+                        <label class="footer-option"><input type="radio" name="purpose" value="inquiry"> 業務諮詢</label>
+                        <label class="footer-option"><input type="radio" name="purpose" value="partnership">
+                            商業合作</label>
+                        <label class="footer-option"><input type="radio" name="purpose" value="other"> 其他</label>
+                    </div>
+
+                    <div class="footer-form-row footer-actions">
+                        <label class="footer-option">
+                            <input type="checkbox" name="privacy" required>
+                            接受服務條款和隱私政策
+                        </label>
+                        <button class="btn-primary" type="submit">送出</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="footer-info">
+                <div class="container">
+                    <div class="footer-brand-row">
+                        <img class="footer-logo" src="images/logo.svg" alt="Riversoft">
+                        <address class="footer-address">
+                            <div>台北市中山區長安東路一段18號6樓</div>
+                            <a href="tel:+886227318965">02-2731-8965</a>
+                        </address>
+                    </div>
+
+                    <div class="footer-meta">
+                        <div class="footer-emails">
+                            <a href="mailto:customer.support@riversoft.com.tw">客戶支援
+                                customer.support@riversoft.com.tw</a>
+                            <a href="mailto:inquiry@riversoft.com.tw">業務諮詢 inquiry@riversoft.com.tw</a>
+                            <a href="mailto:partnership@riversoft.com.tw">商業合作 partnership@riversoft.com.tw</a>
+                        </div>
+                        <div>Copyright © 2026 Riversoft Inc. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <script src="js/navigation.js" defer></script>
+</body>
+
+</html>

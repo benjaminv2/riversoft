@@ -144,7 +144,12 @@ button {
 hr {
     width: 100%;
 }
-
+.agent-list{
+    margin: 1rem 0 1rem 3rem;
+}
+.agent-list li{
+    line-height:2.5rem
+}
 /* =========================================
    3. Typography and color utilities
    ========================================= */
@@ -175,7 +180,7 @@ hr {
 
 .text-h6 {
     font-size: var(--font-size-h6);
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .font-light {
