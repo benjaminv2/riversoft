@@ -158,7 +158,20 @@
     gap: 1rem;
 }
 
+#agent-idp .idp-workflow .card-style-3 {
+    position: relative;
+    gap: 1rem;
+    padding: 0.8rem;
+    border: 3px solid var(--c-sub);
+    border-radius: 1.5rem;
+}
+
 #ticket-x .step-number {
+    background-color: var(--c-sub);
+    border-radius: 9999px;
+}
+
+#agent-idp .idp-workflow .step-number {
     background-color: var(--c-sub);
     border-radius: 9999px;
 }
@@ -189,6 +202,24 @@
     flex-basis: calc((100% - 0.75rem) / 1.2);
 }
 
+#agent-idp .hardware-carousel .case-card {
+    flex-basis: 100%;
+    aspect-ratio: 1 / 1;
+}
+#agent-idp .case-card-content {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+}
+#agent-idp .case-card-content h3 {
+   color:var(--c-dark)
+}
+#agent-idp li{text-align:left;}
+#agent-idp li{margin:0;padding: 0;line-height: 1.5;}
+#agent-idp .card-style-5{justify-content:flex-start}
+#agent-idp .text-h6.text-white{width:100%;}
 #ticket-x .center-style {
     background-image: url(../images/ai@4x.png);
     background-repeat: no-repeat;
@@ -209,11 +240,34 @@
     margin: 1rem auto;
 }
 
+#agent-go .center-style,
+#agent-idp .center-style {
+    height: auto;
+    padding: 16.5rem 0 0;
+    margin: 1rem auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+#agent-go .center-style {
+    background-image: url(../images/agent-go.png);
+}
+
+#agent-idp .center-style {
+    background-image: url(../images/demand-solution.png);
+}
+
 #ticket-x .center-style>div:empty {
     display: none;
 }
 
 #optimus-agent .center-style>div:empty {
+    display: none;
+}
+
+#agent-go .center-style>div:empty,
+#agent-idp .center-style>div:empty {
     display: none;
 }
 #agent-idp .card-style-3 {
@@ -545,7 +599,8 @@
         grid-column: auto;
     }
 
-    #ticket-x .card-style-3:nth-child(-n+5)::after {
+    #ticket-x .card-style-3:nth-child(-n+5)::after,
+    #agent-idp .idp-workflow .card-style-3:nth-child(-n+5)::after {
         content: '';
         position: absolute;
         z-index: 15;
@@ -578,6 +633,19 @@
     }
 
     #optimus-agent .center-style>div:empty {
+        display: block;
+    }
+
+    #agent-go .center-style,
+    #agent-idp .center-style {
+        height: 35rem;
+        padding: 3rem 0;
+        background-position: center;
+        background-size: 43%;
+    }
+
+    #agent-go .center-style>div:empty,
+    #agent-idp .center-style>div:empty {
         display: block;
     }
    .optimus-agent-img{

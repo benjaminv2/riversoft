@@ -548,6 +548,20 @@
     background-color: #efefef !important;
 }
 
+.video-embed {
+    width: min(100%, 60rem);
+    aspect-ratio: 16 / 9;
+    margin-inline: auto;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+}
+
+.video-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .footer-meta {
     display: flex;
     gap: 1rem 2rem;
@@ -590,7 +604,7 @@
     min-width: 0;
     aspect-ratio: 4 / 3;
     overflow: hidden;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     scroll-snap-align: start;
 }
 
