@@ -1,51 +1,36 @@
 /* =========================================
-   OptimusQA page styles
+   1. Shared layout adjustments
    ========================================= */
 .first-fix {
     margin-top: 0;
 }
-
-.width-fix {
-    /* max-width: 90%; */
-}
-
-.card-1 {}
 
 .card-2 {
     width: 100%;
     margin: 0 auto;
 }
 
-.card-3 {}
-
 .card-4 {
     width: 100%;
     margin: 0 auto;
 }
 
-.card-5 {}
-
-#oqa {
-    /* color: var(--c-light); */
-}
-
-#agent-go .pain-point-grid .card-style-1 {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-/* OptimusQA mobile cards */
+/* =========================================
+   2. Shared header and CTA
+   ========================================= */
 .site-header>a>img {
     width: 160px;
     height: auto;
-    padding-left: 0.8rem;
+    /* padding-left: 0.8rem; */
 }
 
 .hero-cta {
     align-self: center;
 }
 
+/* =========================================
+   3. OptimusQA cards and highlights
+   ========================================= */
 #oqa .highlight,
 #oqa .highlight2 {
     display: inline;
@@ -59,25 +44,6 @@
 #oqa .card-style-2 {
     aspect-ratio: unset;
 }
-
-#agent-go .card-style-2 {
-    aspect-ratio: unset;
-}
-
-#agent-go .card-style-5 {
-    border: 0;
-    justify-content: flex-start;
-    background-color: unset;
-    aspect-ratio: unset;
-}
-
-#agent-go .card-style-5 .icon-box {
-    margin-right: 0;
-
-    padding: 0
-}
-
-#agent-go .card-style-4 {}
 
 #oqa .card-style-4 {
     min-height: 0;
@@ -127,6 +93,34 @@
     grid-column: auto;
 }
 
+/* =========================================
+   4. AgentGo cards
+   ========================================= */
+#agent-go .pain-point-grid .card-style-1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#agent-go .card-style-2 {
+    aspect-ratio: unset;
+}
+
+#agent-go .card-style-5 {
+    justify-content: flex-start;
+    aspect-ratio: unset;
+    background-color: unset;
+    border: 0;
+}
+
+#agent-go .card-style-5 .icon-box {
+    padding: 0;
+    margin-right: 0;
+}
+
+/* =========================================
+   5. Ticket-X cards and process
+   ========================================= */
 #ticket-x .card-style-2 {
     aspect-ratio: unset;
 }
@@ -151,14 +145,6 @@
 }
 
 #ticket-x .card-style-3 {
-    border: 3px solid var(--c-sub);
-    border-radius: 1.5rem;
-    padding: 0.8rem;
-    position: relative;
-    gap: 1rem;
-}
-
-#agent-idp .idp-workflow .card-style-3 {
     position: relative;
     gap: 1rem;
     padding: 0.8rem;
@@ -167,11 +153,6 @@
 }
 
 #ticket-x .step-number {
-    background-color: var(--c-sub);
-    border-radius: 9999px;
-}
-
-#agent-idp .idp-workflow .step-number {
     background-color: var(--c-sub);
     border-radius: 9999px;
 }
@@ -202,10 +183,14 @@
     flex-basis: calc((100% - 0.75rem) / 1.2);
 }
 
+/* =========================================
+   6. Agentic IDP cards and carousel
+   ========================================= */
 #agent-idp .hardware-carousel .case-card {
     flex-basis: 100%;
     aspect-ratio: 1 / 1;
 }
+
 #agent-idp .case-card-content {
     top: 0;
     display: flex;
@@ -213,49 +198,101 @@
     justify-content: space-between;
     background: none;
 }
+
 #agent-idp .case-card-content h3 {
-   color:var(--c-dark)
+    color: var(--c-dark);
 }
-#agent-idp li{text-align:left;}
-#agent-idp li{margin:0;padding: 0;line-height: 1.5;}
-#agent-idp .card-style-5{justify-content:flex-start}
-#agent-idp .text-h6.text-white{width:100%;}
+
+#agent-idp li {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#agent-idp .card-style-5 {
+    justify-content: flex-start;
+}
+
+#agent-idp .text-h6.text-white {
+    width: 100%;
+}
+
+#agent-idp .idp-workflow .card-style-3 {
+    position: relative;
+    gap: 1rem;
+    padding: 0.8rem;
+    border: 3px solid var(--c-sub);
+    border-radius: 1.5rem;
+    width: unset;
+}
+
+#agent-idp .card-style-3 {
+    position: relative;
+    width: 160px;
+    gap: 1rem;
+    padding: 0.8rem;
+    background: var(--c-light);
+    border: 3px solid var(--c-sub);
+    border-radius: 1.5rem;
+}
+
+#agent-idp .idp-workflow .step-number {
+    background-color: var(--c-sub);
+    border-radius: 9999px;
+}
+
+#agent-idp .card-style-3>.operation-icon {
+    font-size: 4.8rem;
+    background-color: unset;
+}
+
+#agent-idp .hero .text-box {
+    width: 70%;
+    margin: 1rem auto 0;
+}
+
+/* =========================================
+   7. Center-image layouts
+   ========================================= */
 #ticket-x .center-style {
+    height: auto;
+    padding: 16.5rem 0 0;
+    margin: 1rem auto;
     background-image: url(../images/ai@4x.png);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: top center;
-    padding: 16.5rem 0 0;
-    height: auto;
-    margin: 1rem auto;
+    background-size: contain;
 }
 
 #optimus-agent .center-style {
-    background-image: url(../images/meta-agent-con.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top center;
-    padding: 16.5rem 0 0;
-    height: auto;
-    margin: 1rem auto;
-}
-
-#agent-go .center-style,
-#agent-idp .center-style {
     height: auto;
     padding: 16.5rem 0 0;
     margin: 1rem auto;
+    background-image: url(../images/robot@2x.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
 }
 
 #agent-go .center-style {
+    height: auto;
+    padding: 16.5rem 0 0;
+    margin: 1rem auto;
     background-image: url(../images/agent-go.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
 }
 
 #agent-idp .center-style {
+    height: auto;
+    padding: 16.5rem 0 0;
+    margin: 1rem auto;
     background-image: url(../images/demand-solution.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
 }
 
 #ticket-x .center-style>div:empty {
@@ -266,70 +303,44 @@
     display: none;
 }
 
-#agent-go .center-style>div:empty,
+#agent-go .center-style>div:empty {
+    display: none;
+}
+
 #agent-idp .center-style>div:empty {
     display: none;
 }
-#agent-idp .card-style-3 {
-    border: 3px solid var(--c-sub);
-    border-radius: 1.5rem;
-    padding: 0.8rem;
-    position: relative;
-    gap: 1rem;
-    background: var(--c-light);
-    /* aspect-ratio: unset; */
-    width: 160px;
-}
-#agent-idp .card-style-3>.operation-icon
-{
-    background-color: unset;
-    /* aspect-ratio: 2/1; */
-    font-size: 4.8rem;
-}
-#agent-idp .hero .text-box{
-    margin:1rem auto 0;
-    width:70%
-}
-.white {
-    background-color: #fff;
-}
 
-.img-fix {
-    object-fit: fill;
-    position: absolute;
-    /* left: auto; */
-    right: 50%;
-    top: 0;
-    transform: translate(50%);
-    max-width: 150%;
-}
-
-
+/* =========================================
+   8. Hero typography and highlights
+   ========================================= */
 #oqa .hero-tex1 {
     margin-bottom: 0;
     font-weight: 500;
     letter-spacing: 0.3rem;
 }
 
-#oqa .hero-tex2, #agent-idp .hero-tex2 {
+#oqa .hero-tex2,
+#agent-idp .hero-tex2 {
     margin-bottom: 0.75rem;
     font-weight: 800;
 }
 
-#oqa .hero-tex3, #agent-idp .hero-tex3{
+#oqa .hero-tex3,
+#agent-idp .hero-tex3 {
     margin-bottom: 0.5rem;
     line-height: 1.3;
     font-weight: 700;
 }
 
-#oqa .hero-tex4,#agent-idp .hero-tex4 {
+#oqa .hero-tex4,
+#agent-idp .hero-tex4 {
     margin-bottom: 0;
     line-height: 1.25;
     font-weight: 900;
 }
 
 #oqa .hero-text5 {
-    /* margin-bottom: 2rem; */
     line-height: 1.85rem;
 }
 
@@ -353,6 +364,9 @@
     background-image: linear-gradient(to top, #8bdcf76b 40%, transparent 40%);
 }
 
+/* =========================================
+   9. Hero structure
+   ========================================= */
 .hero-wrap {
     position: relative;
     display: flex;
@@ -383,17 +397,27 @@
         url('../images/colored-bubbles-06.png'),
         linear-gradient(180deg, #fff 0%, #eff3f5 100%);
     background-repeat: no-repeat, no-repeat;
-    background-position: center, center;
+    background-position: top 40px center;
     background-size: contain, cover;
     background-color: var(--c-bg);
-    min-height: 685px;
+    min-height: unset;
 }
 
 #optimus-agent .innder-content {
     color: var(--c-main);
     background: transparent;
     clip-path: none;
-    padding-top: 243px;
+    padding-top: 386px;
+}
+#optimus-agent .hero-image {
+    position: absolute;
+    z-index: 2;
+    top: -86px;
+    bottom: unset;
+    width: min(90%, 30rem);
+    margin: 0 auto;
+    padding: 8px;
+    width: 120%;
 }
 
 .innder-content {
@@ -409,13 +433,26 @@
 .hero-image {
     position: relative;
     z-index: 3;
-    /* right: -50%; */
     bottom: -29%;
     width: min(90%, 30rem);
     margin: 0 auto;
     padding: 8px;
-    /* opacity: 0.32; */
-    /* pointer-events: none; */
+}
+
+/* =========================================
+   10. Content spacing and media helpers
+   ========================================= */
+.white {
+    background-color: #fff;
+}
+
+.img-fix {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    max-width: 150%;
+    object-fit: fill;
+    transform: translate(50%);
 }
 
 .text-box {
@@ -427,16 +464,9 @@
 }
 
 .text-box p {
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
     font-weight: 500;
     color: var(--c-dark);
-    margin-top: 0.5rem;
-}
-
-.hero-padding {
-    /* padding-top: 4rem; */
-    /* padding-bottom: 5rem; */
-    /* padding: 144px 0 0; */
 }
 
 .section-padding-top {
@@ -470,6 +500,9 @@
     overflow: hidden;
 }
 
+/* =========================================
+   11. Tablet enhancements (>= 768px)
+   ========================================= */
 @media (min-width: 768px) {
     :root {
         --font-size-h1: 4rem;
@@ -508,6 +541,9 @@
     }
 }
 
+/* =========================================
+   12. Desktop enhancements (>= 1024px)
+   ========================================= */
 @media (min-width: 1024px) {
     :root {
         --font-size-h1: 6rem;
@@ -515,6 +551,31 @@
         --font-size-h3: 2rem;
         --font-size-h4: 1.5rem;
         --font-size-h5: 1.25rem;
+    }
+
+    #optimus-agent .hero {
+        color: var(--c-main);
+        clip-path: none;
+        background-image:
+            url('../images/colored-bubbles-06.png'),
+            linear-gradient(180deg, #fff 0%, #eff3f5 100%);
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center;
+        background-size: contain, cover;
+        background-color: var(--c-bg);
+        min-height: 685px;
+    }
+
+    #optimus-agent .hero-image {
+          position: absolute;
+        z-index: 12;
+        top: 0;
+        right: 0;
+        width: 35%;
+        max-width: none;
+        margin: 0;
+        padding: 100px 0 0;
+        opacity: 1;
     }
 
     .first-fix {
@@ -531,7 +592,8 @@
     }
 
     #oqa .highlight,
-    #oqa .highlight2,  #agent-idp .highlight,
+    #oqa .highlight2,
+    #agent-idp .highlight,
     #agent-idp .highlight2 {
         display: inline-block;
         padding-bottom: 2px;
@@ -604,87 +666,115 @@
         content: '';
         position: absolute;
         z-index: 15;
-        top: 50%;
-        right: -30px;
-        width: 0;
-        height: 0;
-        border-top: 30px solid transparent;
+        top: 45%;
+        right: -22px;
+        /* width: 0;
+        height: 0; */
+        /* border-top: 30px solid transparent;
         border-bottom: 30px solid transparent;
-        border-left: 30px solid var(--c-accent);
+        border-left: 30px solid var(--c-main);
         transform: translateY(-50%);
+        background-color: var(--c-bg); */
+    width: 40px;
+  height: 40px;
+  background-color: var(--c-bg);      /* 背景色 */
+  border-left: 3px solid #2F4288; /* 邊框色 */
+  border-top: 3px solid #2F4288;  /* 邊框色 */
+  
+  /* 旋轉 45 度變成向上箭頭 */
+  transform:  scaleX(1) rotate(135deg);
     }
 
     #ticket-x .center-style {
         height: 35rem;
         padding: 3rem 0;
-        background-size: 50%;
         background-position: center;
-    }
-
-    #ticket-x .center-style>div:empty {
-        display: block;
+        background-size: 50%;
     }
 
     #optimus-agent .center-style {
         height: 34rem;
         padding: 3rem 0;
-        background-size: 43%;
         background-position: center;
+        background-size: 43%;
+    }
+
+    #agent-go .center-style {
+        height: 35rem;
+        padding: 3rem 0;
+        background-position: center;
+        background-size: 38%;
+    }
+
+    #agent-idp .center-style {
+        height: 35rem;
+        padding: 3rem 0;
+        background-position: center;
+        background-size: 50%;
+    }
+
+    #ticket-x .center-style>div:empty {
+        display: block;
     }
 
     #optimus-agent .center-style>div:empty {
         display: block;
     }
 
-    #agent-go .center-style,
-    #agent-idp .center-style {
-        height: 35rem;
-        padding: 3rem 0;
-        background-position: center;
-        background-size: 43%;
+    #agent-go .center-style>div:empty {
+        display: block;
     }
 
-    #agent-go .center-style>div:empty,
     #agent-idp .center-style>div:empty {
         display: block;
     }
-   .optimus-agent-img{
-                     width:90%;
-                     margin: 1rem auto;
-                     background-color:var(--c-light);
-                     padding:2rem;
-                     border: 1px solid var(--c-sub);
-                     border-radius:1.5rem
-                     }
-    .agent-num{font-size:9rem;letter-spacing: -13px;line-height: 0.7;}
-    .agent-box{
-    border-radius: 30px;
-    border: 3px solid #e5e5e5;
-    padding: 4rem;
-    width: 85%;
-    margin: 0 auto;
-    }
-    #optimus-agent .card-style-5
-    {aspect-ratio:1/0.9;border-color:#ffffff1c
-    }
- #optimus-agent .card-style-2
-    {aspect-ratio:unset;
-    }
-    #ticket-x .center-style>div:empty {
-        display: block;
+
+    .optimus-agent-img {
+        width: 90%;
+        padding: 2rem;
+        margin: 1rem auto 4rem;
+        background-color: var(--c-light);
+        border: 1px solid var(--c-sub);
+        border-radius: 1.5rem;
     }
 
-    #oqa .hero-tex1 , #{
-        margin-bottom: -0.7rem;
+    .agent-num {
+        font-size: 9rem;
+        line-height: 0.7;
+        letter-spacing: -13px;
+    }
+
+    .agent-box {
+        width: 85%;
+        padding: 4rem;
+        margin: 0 auto;
+        border: 3px solid #e5e5e5;
+        border-radius: 30px;
+    }
+
+    #optimus-agent .card-style-5 {
+        aspect-ratio: 1 / 0.9;
+        border-color: #ffffff1c;
+    }
+
+    #optimus-agent .card-style-2 {
+        aspect-ratio: unset;
     }
 
     #oqa .hero-tex3 {
         line-height: 2.55rem;
     }
 
-    #oqa .hero-tex4 ,#agent-idp .hero-tex4{
+    #oqa .hero-tex4,
+    #agent-idp .hero-tex4 {
         line-height: 3.55rem;
     }
+    #optimus-agent .innder-content {
+    color: var(--c-main);
+    background: transparent;
+    clip-path: none;
+    padding-top: 243px;
+}
 
     .hero {
         z-index: 1;
@@ -715,7 +805,7 @@
     }
 
     .text-box {
-        margin: 5rem auto;
+        margin: 3rem auto 2rem;
     }
 
     .section-padding-top {
