@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: space-between;
     max-height: 100px;
-    padding: 0.8rem 1rem;
+    padding: 0 1rem;
     background-color: var(--c-main);
     /* height: 75px; */
     width: 100%;
