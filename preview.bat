@@ -3,12 +3,12 @@ setlocal
 chcp 65001 >nul
 
 cd /d "%~dp0"
-set "PREVIEW_PORT=5500"
-set "PREVIEW_PAGE=http://127.0.0.1:%PREVIEW_PORT%/OptimusQA.html"
+set PREVIEW_PORT=5500
+set PREVIEW_PAGE=http://127.0.0.1:5500/OptimusQA.html
 
-netstat -ano | findstr /R /C:":%PREVIEW_PORT% .*LISTENING" >nul 2>&1
+netstat -ano | findstr /R /C:":5500 .*LISTENING" >nul 2>&1
 if %errorlevel% equ 0 (
-    echo 預覽服務已在 %PREVIEW_PORT% 執行，正在開啟網站...
+    echo [INFO] Server is already running on port 5500. Opening browser...
     start "" "%PREVIEW_PAGE%"
     timeout /t 2 >nul
     exit /b 0
@@ -16,33 +16,29 @@ if %errorlevel% equ 0 (
 
 where python >nul 2>&1
 if %errorlevel% equ 0 (
-    set "PYTHON_CMD=python"
+    set PYTHON_CMD=python
 ) else (
     where py >nul 2>&1
     if %errorlevel% equ 0 (
-        set "PYTHON_CMD=py"
+        set PYTHON_CMD=py
     ) else (
-        echo [錯誤] 找不到 Python，請先安裝 Python。
+        echo [ERROR] Python not found. Please install Python.
         pause
         exit /b 1
     )
 )
 
 echo ========================================
-echo Riversoft 網站預覽
+echo Riversoft Web Preview
+echo URL: %PREVIEW_PAGE%
+echo Press Ctrl+C to stop the server.
 echo ========================================
-echo 電腦：%PREVIEW_PAGE%
-echo 手機：請使用 http://電腦區網IP:%PREVIEW_PORT%/OptimusQA.html
-echo.
-echo 請保持此視窗開啟；按 Ctrl+C 可停止預覽。
-echo ========================================
-echo.
 
-start "" "%PREVIEW_PAGE%"
-%PYTHON_CMD% -m http.server %PREVIEW_PORT% --bind 0.0.0.0
+start "" cmd /c "timeout /t 1 >nul && start %PREVIEW_PAGE%"
+%PYTHON_CMD% -m http.server 5500 --bind 0.0.0.0
 
 echo.
-echo 預覽服務已停止。
+echo Server stopped.
 pause
 
 endlocal

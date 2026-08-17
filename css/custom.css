@@ -404,10 +404,10 @@
 .video-wrap {
     background:
         /* 第一張圖：電視 (居中並往下偏移 154px，大小 53%) */
-        url('../images/tv.png') center calc(50% + 154px) / 53% auto no-repeat,
+        url('../img/tv.png') center calc(50% + 154px) / 53% auto no-repeat,
 
         /* 第二張圖：彩色泡泡 (全覆蓋底圖) */
-        url('../images/colored-bubbles-06.png') top center / 100% no-repeat;
+        url('../img/colored-bubbles-06.png') top center / 100% no-repeat;
 }
 
 /* =========================================
@@ -417,7 +417,7 @@
     height: auto;
     padding: 16.5rem 0 0;
     margin: 1rem auto;
-    background-image: url(../images/ai@4x.png);
+    background-image: url(../img/ai@4x.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -427,7 +427,7 @@
     height: auto;
     padding: 16.5rem 0 0;
     margin: 1rem auto;
-    background-image: url(../images/robot@2x.png);
+    background-image: url(../img/robot@2x.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -437,7 +437,7 @@
     height: auto;
     padding: 16.5rem 0 0;
     margin: 1rem auto;
-    background-image: url(../images/agent-go.png);
+    background-image: url(../img/agent-go.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -447,7 +447,7 @@
     height: auto;
     padding: 16.5rem 0 0;
     margin: 1rem auto;
-    background-image: url(../images/demand-solution.png);
+    background-image: url(../img/demand-solution.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -569,7 +569,7 @@
     color: var(--c-main);
     clip-path: none;
     background-image:
-        url('../images/colored-bubbles-06.png'),
+        url('../img/colored-bubbles-06.png'),
         linear-gradient(180deg, #fff 0%, #eff3f5 100%);
     background-repeat: no-repeat, no-repeat;
     background-position: top 40px center;
@@ -733,7 +733,7 @@
         color: var(--c-main);
         clip-path: none;
         background-image:
-            url('../images/colored-bubbles-06.png'),
+            url('../img/colored-bubbles-06.png'),
             linear-gradient(180deg, #fff 0%, #eff3f5 100%);
         background-repeat: no-repeat, no-repeat;
         background-position: center, center;
@@ -920,12 +920,12 @@
     }
 
     .optimus-agent-img {
-        width: 90%;
-        padding: 2rem;
+        /* width: 90%; */
+        /* padding: 2rem; */
         margin: 1rem auto 4rem;
-        background-color: var(--c-light);
-        border: 1px solid var(--c-sub);
-        border-radius: 1.5rem;
+        /* background-color: var(--c-light); */
+        /* border: 1px solid var(--c-sub); */
+        /* border-radius: 1.5rem; */
     }
 
     .agent-num {
@@ -1019,7 +1019,7 @@
     }
 
     .tv {
-        background-image: url('../images/tv.jpg');
+        background-image: url('../img/tv.jpg');
         background-size: 94%;
         background-position: center;
         background-repeat: no-repeat;

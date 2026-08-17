@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN'
+          'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg font-family="Noto Sans CJK TC, Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" height="1000" viewBox="0 0 1680 1000" width="1680" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+><defs
+  ><g fill="none" id="a" stroke="#1E44A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"
+    ><rect height="20" rx="2.5" width="32" x="-16" y="-14"
+      /><path d="M -21 10 H 21 M -13 -7 H 13"
+    /></g
+    ><g fill="none" id="b" stroke="#1E44A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"
+    ><rect height="23" rx="2.5" width="34" x="-17" y="-15"
+      /><path d="M -6 14 H 6 M 0 8 V 14 M -11 -4 H 11 M -11 1 H 4"
+    /></g
+    ><g fill="none" id="c" stroke="#1E44A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"
+    ><path d="M -9 -9 L -17 0 L -9 9 M 9 -9 L 17 0 L 9 9 M 3 -12 L -3 12"
+    /></g
+    ><g fill="none" id="d" stroke="#1E44A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"
+    ><rect height="32" rx="4" width="20" x="-10" y="-16"
+      /><path d="M -4 11 H 4"
+    /></g
+    ><g fill="none" id="i" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><path d="M -14 -16 H 6 L 14 -8 V 16 H -14 Z M 6 -16 V -8 H 14"
+      /><path d="M -8 -4 H 8 M -8 2 H 3"
+      /><circle cx="5" cy="9" r="5.5"
+      /><path d="M 9 13 L 13 17"
+    /></g
+    ><g fill="none" id="j" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><rect height="26" rx="2" width="30" x="-15" y="-13"
+      /><path d="M -15 -5 H 15 M -15 3 H 15 M -5 -13 V 13 M 5 -13 V 13"
+    /></g
+    ><g fill="none" id="k" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><circle cx="-4" cy="-7" r="6"
+      /><path d="M -14 13 C -14 5 -10 2 -4 2 C -1 2 1.5 2.8 3.4 4.2"
+      /><circle cx="9" cy="9" r="7"
+      /><path d="M 5.5 9 L 8 11.5 L 12.5 6.5"
+    /></g
+    ><g fill="none" id="l" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><rect height="9" rx="2" transform="rotate(45 0 -11.5)" width="9" x="-4.5" y="-16"
+      /><circle cx="-11" cy="10" r="5"
+      /><circle cx="11" cy="10" r="5"
+      /><path d="M 0 -4 V 2 M 0 2 H -11 V 5 M 0 2 H 11 V 5"
+    /></g
+    ><g fill="none" id="m" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><rect height="22" rx="2.5" width="32" x="-16" y="-14"
+      /><circle cx="-6" cy="-5" r="3.5"
+      /><path d="M -12 4 C -12 0 -9 -0.5 -6 -0.5 C -3 -0.5 0 0 0 4"
+      /><path d="M 5 -6 L 8 -3 L 13 -9"
+      /><path d="M -6 13 H 6 M 0 8 V 13"
+    /></g
+    ><g fill="none" id="g" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><path d="M -15 -12 H 15 V 8 H -2 L -9 15 V 8 H -15 Z"
+      /><path d="M -8 -5 H 8 M -8 1 H 4"
+    /></g
+    ><g fill="none" id="h" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><circle cx="-6" cy="-3" r="6.5"
+      /><path d="M -6 -13 V -9.5 M -6 3.5 V 7 M -16 -3 H -12.5 M 0.5 -3 H 4 M -13.4 -10.4 L -10.9 -7.9 M -1.1 1.9 L 1.4 4.4 M -13.4 4.4 L -10.9 1.9 M -1.1 -7.9 L 1.4 -10.4"
+      /><path d="M 4 12 H 14 M 10.5 8.5 L 14 12 L 10.5 15.5"
+    /></g
+    ><g fill="none" id="n" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><path d="M -16 -10 H -4 L 0 -5 H 16 V 12 H -16 Z"
+      /><path d="M -16 -10 V 12"
+    /></g
+    ><g fill="none" id="o" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><ellipse cy="-11" rx="13" ry="5"
+      /><path d="M -13 -11 V 11 C -13 14 -7 16 0 16 C 7 16 13 14 13 11 V -11"
+      /><path d="M -13 -3.5 C -13 -0.5 -7 1.5 0 1.5 C 7 1.5 13 -0.5 13 -3.5"
+      /><path d="M -13 4 C -13 7 -7 9 0 9 C 7 9 13 7 13 4"
+    /></g
+    ><g fill="none" id="p" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><path d="M 0 -16 L 14 -8 V 8 L 0 16 L -14 8 V -8 Z"
+      /><path d="M -14 -8 L 0 0 L 14 -8 M 0 0 V 16"
+    /></g
+    ><g fill="none" id="q" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><rect height="9" rx="2" width="26" x="-13" y="-15"
+      /><rect height="9" rx="2" width="26" x="-13" y="-4.5"
+      /><rect height="9" rx="2" width="26" x="-13" y="6"
+      /><path d="M -8 -10.5 H -3 M -8 0 H -3 M -8 10.5 H -3"
+      /><circle cx="8" cy="-10.5" fill="#17357F" r="1.4"
+      /><circle cx="8" fill="#17357F" r="1.4"
+      /><circle cx="8" cy="10.5" fill="#17357F" r="1.4"
+    /></g
+    ><g fill="none" id="r" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><rect height="22" rx="3" width="22" x="-11" y="-11"
+      /><rect height="10" rx="1.5" width="10" x="-5" y="-5"
+      /><path d="M -6 -16 V -11 M 0 -16 V -11 M 6 -16 V -11 M -6 11 V 16 M 0 11 V 16 M 6 11 V 16 M -16 -6 H -11 M -16 0 H -11 M -16 6 H -11 M 11 -6 H 16 M 11 0 H 16 M 11 6 H 16"
+    /></g
+    ><g fill="none" id="s" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><rect height="11" rx="2.5" width="30" x="-15" y="-12"
+      /><rect height="11" rx="2.5" width="30" x="-15" y="1"
+      /><circle cx="9" cy="-6.5" fill="#17357F" r="1.5"
+      /><circle cx="9" cy="6.5" fill="#17357F" r="1.5"
+      /><path d="M -10 -6.5 H -2 M -10 6.5 H -2"
+    /></g
+    ><g fill="none" id="t" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><rect height="12" rx="2.5" width="30" x="-15" y="-4"
+      /><circle cx="-9" cy="2" fill="#17357F" r="1.5"
+      /><circle cx="-3" cy="2" fill="#17357F" r="1.5"
+      /><circle cx="3" cy="2" fill="#17357F" r="1.5"
+      /><path d="M 8 0 V 4 M 11.5 0 V 4"
+      /><path d="M -8 -10 C -3 -14 3 -14 8 -10 M -4.5 -6.5 C -1.5 -8.5 1.5 -8.5 4.5 -6.5"
+    /></g
+    ><g fill="none" id="u" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><rect height="11" rx="2.5" width="30" x="-15" y="2"
+      /><circle cx="9" cy="7.5" fill="#17357F" r="1.5"
+      /><path d="M -10 7.5 H -2"
+      /><path d="M -7 -6 A 8 8 0 1 1 -3 -12"
+      /><path d="M -3 -16 L -3 -12 L -7 -12"
+    /></g
+    ><g fill="none" id="w" stroke="#1E44A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><rect height="30" rx="1.5" width="18" x="-13" y="-15"
+      /><path d="M 5 -6 H 13 V 15 H 5"
+      /><path d="M -9 -9 H -6 M -3 -9 H 0 M -9 -3 H -6 M -3 -3 H 0 M -9 3 H -6 M -3 3 H 0 M -9 9 H -6 M -3 9 H 0 M 8 0 H 10 M 8 6 H 10"
+      /><path d="M -17 15 H 17"
+    /></g
+    ><g fill="none" id="x" stroke="#1E44A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><circle cy="-2" r="7"
+      /><path d="M 0 -13 V -9 M 0 5 V 9 M -11 -2 H -7 M 7 -2 H 11 M -7.8 -9.8 L -5 -7 M 7.8 -9.8 L 5 -7 M -7.8 5.8 L -5 3 M 7.8 5.8 L 5 3"
+      /><circle cy="-2" r="2.6"
+      /><path d="M -12 15 C -6 10 6 10 12 15"
+    /></g
+    ><g fill="none" id="y" stroke="#1E44A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><path d="M -16 -8 H -5 L -1 -3.5 H 12 V 1"
+      /><path d="M -16 -8 V 13 H 10 L 16 1 H -10 L -16 13"
+    /></g
+    ><g fill="none" id="z" stroke="#1E44A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><circle cx="-7" cy="-6" r="5.5"
+      /><path d="M -16 13 C -16 5 -12 2 -7 2 C -2 2 2 5 2 13"
+      /><circle cx="8" cy="-4" r="4.5"
+      /><path d="M 6 1.5 C 11 1.5 15 4.5 15 11"
+    /></g
+    ><g fill="none" id="A" stroke="#1E44A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><path d="M -14 -4 H -6 V -9 A 4 4 0 1 1 2 -9 V -4 H 10 V 3 A 4 4 0 1 0 10 11 V 15 H -14 Z"
+    /></g
+    ><g id="f" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><rect fill="#FFF" height="15" rx="3" width="18" x="-9" y="-3"
+      /><path d="M -5.5 -3 V -8 A 5.5 5.5 0 0 1 5.5 -8 V -3" fill="none"
+      /><circle cy="4.5" fill="#17357F" r="2" stroke="none"
+    /></g
+    ><g fill="none" id="v" stroke="#17357F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"
+    ><path d="M 0 -15 C 5 -12 10 -11 14 -11 C 14 2 9 11 0 15 C -9 11 -14 2 -14 -11 C -10 -11 -5 -12 0 -15 Z"
+      /><path d="M -5.5 0 L -1.5 4 L 6 -4"
+    /></g
+    ><marker id="e" markerHeight="7" markerWidth="7" orient="auto-start-reverse" refX="8" refY="5" viewBox="0 0 10 10"
+    ><path d="M 0 0 L 10 5 L 0 10 z" fill="#3B62C4"
+    /></marker
+  ></defs
+  ><path d="M0 0H1680V1000H0z" fill="#FFF"
+  /><rect fill="#F7FAFF" height="850" rx="14" stroke="#BCE" stroke-width="1.5" width="232" x="48" y="86"
+  /><rect fill="#17357F" height="40" rx="20" width="176" x="76" y="66"
+  /><text fill="#FFF" font-size="20" font-weight="700" text-anchor="middle" x="164" y="93"
+  >使用者存取</text
+  ><g text-anchor="middle"
+  ><use transform="translate(164,208) scale(1.5)" xlink:href="#a"
+    /><text fill="#17357F" font-size="17" font-weight="600" x="164" y="272"
+    >Web Browser</text
+    ><use transform="translate(164,398) scale(1.5)" xlink:href="#b"
+    /><text fill="#17357F" font-size="17" font-weight="600" x="164" y="462"
+    >Desktop</text
+    ><use transform="translate(164,588) scale(1.5)" xlink:href="#c"
+    /><text fill="#17357F" font-size="17" font-weight="600" x="164" y="652"
+    >API Client</text
+    ><use transform="translate(164,778) scale(1.5)" xlink:href="#d"
+    /><text fill="#17357F" font-size="17" font-weight="600" x="164" y="842"
+    >Mobile App</text
+  ></g
+  ><path d="M292 512L380 512" marker-end="url(#e)" marker-start="url(#e)" stroke="#3B62C4" stroke-width="2.6"
+  /><use transform="translate(336,470)" xlink:href="#f"
+  /><text fill="#42568C" font-size="14" font-weight="600" text-anchor="middle" x="336" y="548"
+  >HTTPS / TLS</text
+  ><rect fill="#FDFEFF" height="850" rx="16" stroke="#4A6CC7" stroke-dasharray="9 7" stroke-width="2" width="876" x="392" y="86"
+  /><rect fill="#17357F" height="40" rx="20" width="420" x="620" y="66"
+  /><text fill="#FFF" font-size="20" font-weight="700" text-anchor="middle" x="830" y="93"
+  >企業內網（On-Premise / Air-Gapped）</text
+  ><rect fill="#F4F8FF" height="450" rx="14" stroke="#2B50B8" stroke-width="2" width="820" x="420" y="126"
+  /><text fill="#122E74" font-size="28" font-weight="800" text-anchor="middle" x="830" y="168"
+  >On-Prem Agentic IDP</text
+  ><text fill="#5A6B94" font-size="12.5" font-weight="600" x="448" y="196"
+  >應用情境</text
+  ><g transform="translate(448,204)"
+  ><rect fill="#E4EDFF" height="80" rx="10" stroke="#2B50B8" stroke-width="1.6" width="378"
+    /><use transform="translate(46,40) scale(1.05)" xlink:href="#g"
+    /><text fill="#122E74" font-size="17.5" font-weight="700" text-anchor="middle" x="212" y="36"
+    >Document AI（AI-KM）</text
+    ><text fill="#42568C" font-size="12.5" text-anchor="middle" x="212" y="60"
+    >文件智慧問答・垂直領域 Agent（會計、物流 等）</text
+  ></g
+  ><g transform="translate(842,204)"
+  ><rect fill="#E4EDFF" height="80" rx="10" stroke="#2B50B8" stroke-width="1.6" width="378"
+    /><use transform="translate(46,40) scale(1.05)" xlink:href="#h"
+    /><text fill="#122E74" font-size="17.5" font-weight="700" text-anchor="middle" x="212" y="36"
+    >Workflow 整合</text
+    ><text fill="#42568C" font-size="12.5" text-anchor="middle" x="212" y="60"
+    >串接 ERP / RPA / BPM，自動化完成業務流程</text
+  ></g
+  ><text fill="#5A6B94" font-size="12.5" font-weight="600" x="448" y="312"
+  >核心模組</text
+  ><g
+  ><g transform="translate(448,320)"
+    ><rect fill="#FFF" height="106" rx="10" stroke="#C9D8F5" stroke-width="1.5" width="144"
+      /><use transform="translate(72,36)" xlink:href="#i"
+      /><text fill="#17357F" font-size="16" font-weight="700" text-anchor="middle" x="72" y="80"
+      >文件理解</text
+      ><text fill="#5A6B94" font-size="10.5" text-anchor="middle" x="72" y="97"
+      >Understanding</text
+    ></g
+    ><g transform="translate(605,320)"
+    ><rect fill="#FFF" height="106" rx="10" stroke="#C9D8F5" stroke-width="1.5" width="144"
+      /><use transform="translate(72,36)" xlink:href="#j"
+      /><text fill="#17357F" font-size="16" font-weight="700" text-anchor="middle" x="72" y="80"
+      >資料擷取</text
+      ><text fill="#5A6B94" font-size="10.5" text-anchor="middle" x="72" y="97"
+      >Extraction</text
+    ></g
+    ><g transform="translate(762,320)"
+    ><rect fill="#FFF" height="106" rx="10" stroke="#C9D8F5" stroke-width="1.5" width="144"
+      /><use transform="translate(72,36)" xlink:href="#k"
+      /><text fill="#17357F" font-size="16" font-weight="700" text-anchor="middle" x="72" y="80"
+      >驗證與覆核</text
+      ><text fill="#5A6B94" font-size="10.5" text-anchor="middle" x="72" y="97"
+      >Validation</text
+    ></g
+    ><g transform="translate(919,320)"
+    ><rect fill="#FFF" height="106" rx="10" stroke="#C9D8F5" stroke-width="1.5" width="144"
+      /><use transform="translate(72,36)" xlink:href="#l"
+      /><text fill="#17357F" font-size="16" font-weight="700" text-anchor="middle" x="72" y="80"
+      >流程引擎</text
+      ><text fill="#5A6B94" font-size="10.5" text-anchor="middle" x="72" y="97"
+      >Workflow</text
+    ></g
+    ><g transform="translate(1076,320)"
+    ><rect fill="#FFF" height="106" rx="10" stroke="#C9D8F5" stroke-width="1.5" width="144"
+      /><use transform="translate(72,36)" xlink:href="#m"
+      /><text fill="#17357F" font-size="16" font-weight="700" text-anchor="middle" x="72" y="80"
+      >人工覆核</text
+      ><text fill="#5A6B94" font-size="10.5" text-anchor="middle" x="72" y="97"
+      >Human-in-the-Loop</text
+    ></g
+  ></g
+  ><rect fill="#DCE8FF" height="40" rx="8" width="772" x="448" y="440"
+  /><text fill="#17357F" font-size="17" font-weight="700" text-anchor="middle" x="834" y="466"
+  >Orchestrator / Agent Framework</text
+  ><rect fill="#EDF3FF" height="70" rx="8" stroke="#C9D8F5" stroke-width="1.5" width="772" x="448" y="492"
+  /><text fill="#17357F" font-size="16" font-weight="700" text-anchor="middle" x="560" y="534"
+  >AI 模型服務</text
+  ><g fill="#2B50B8" font-size="13.5" font-weight="600" text-anchor="middle"
+  ><rect fill="#FFF" height="32" rx="16" stroke="#C9D8F5" stroke-width="1.3" width="164" x="668" y="512"
+    /><text x="750" y="533"
+    >LLM 推論引擎</text
+    ><rect fill="#FFF" height="32" rx="16" stroke="#C9D8F5" stroke-width="1.3" width="164" x="848" y="512"
+    /><text x="930" y="533"
+    >OCR / 版面分析</text
+    ><rect fill="#FFF" height="32" rx="16" stroke="#C9D8F5" stroke-width="1.3" width="164" x="1028" y="512"
+    /><text x="1110" y="533"
+    >Embedding 模型</text
+  ></g
+  ><rect fill="#F4F8FF" height="132" rx="14" stroke="#2B50B8" stroke-width="2" width="820" x="420" y="592"
+  /><text fill="#122E74" font-size="18" font-weight="800" text-anchor="middle" x="830" y="622"
+  >資料層</text
+  ><g text-anchor="middle"
+  ><use transform="translate(560,658) scale(0.9)" xlink:href="#n"
+    /><text fill="#17357F" font-size="14.5" font-weight="700" x="560" y="694"
+    >文件儲存</text
+    ><text fill="#5A6B94" font-size="11" x="560" y="711"
+    >(File Storage)</text
+    ><path d="M695 638L695 712" stroke="#C9D8F5" stroke-width="1.3"
+    /><use transform="translate(830,658) scale(0.85)" xlink:href="#o"
+    /><text fill="#17357F" font-size="14.5" font-weight="700" x="830" y="694"
+    >結構化資料庫</text
+    ><text fill="#5A6B94" font-size="11" x="830" y="711"
+    >(Database)</text
+    ><path d="M965 638L965 712" stroke="#C9D8F5" stroke-width="1.3"
+    /><use transform="translate(1100,658) scale(0.9)" xlink:href="#p"
+    /><text fill="#17357F" font-size="14.5" font-weight="700" x="1100" y="694"
+    >模型與索引庫</text
+    ><text fill="#5A6B94" font-size="11" x="1100" y="711"
+    >(Model &amp; Vector Index)</text
+  ></g
+  ><rect fill="#F4F8FF" height="132" rx="14" stroke="#2B50B8" stroke-width="2" width="820" x="420" y="740"
+  /><text fill="#122E74" font-size="18" font-weight="800" text-anchor="middle" x="830" y="770"
+  >基礎設施層</text
+  ><g text-anchor="middle"
+  ><use transform="translate(505,808) scale(0.95)" xlink:href="#q"
+    /><text fill="#17357F" font-size="14" font-weight="700" x="505" y="848"
+    >應用伺服器</text
+    ><path d="M586 788L586 854" stroke="#C9D8F5" stroke-width="1.3"
+    /><use transform="translate(667,808) scale(0.95)" xlink:href="#r"
+    /><text fill="#17357F" font-size="14" font-weight="700" x="667" y="848"
+    >GPU / CPU 伺服器</text
+    ><path d="M748 788L748 854" stroke="#C9D8F5" stroke-width="1.3"
+    /><use transform="translate(829,808) scale(0.95)" xlink:href="#s"
+    /><text fill="#17357F" font-size="14" font-weight="700" x="829" y="848"
+    >儲存設備</text
+    ><path d="M910 788L910 854" stroke="#C9D8F5" stroke-width="1.3"
+    /><use transform="translate(991,808) scale(0.95)" xlink:href="#t"
+    /><text fill="#17357F" font-size="14" font-weight="700" x="991" y="848"
+    >網路設備</text
+    ><path d="M1072 788L1072 854" stroke="#C9D8F5" stroke-width="1.3"
+    /><use transform="translate(1153,808) scale(0.95)" xlink:href="#u"
+    /><text fill="#17357F" font-size="14" font-weight="700" x="1153" y="848"
+    >備份設備</text
+  ></g
+  ><g
+  ><use transform="translate(538,906) scale(0.85)" xlink:href="#v"
+    /><text fill="#42568C" font-size="15" font-weight="600" x="564" y="912"
+    >文件與資料全程保留於企業內網，支援實體隔離（Air-Gapped）環境，資料不外流</text
+  ></g
+  ><path d="M1280 512L1368 512" marker-end="url(#e)" marker-start="url(#e)" stroke="#3B62C4" stroke-width="2.6"
+  /><use transform="translate(1324,470)" xlink:href="#f"
+  /><text fill="#42568C" font-size="14" font-weight="600" text-anchor="middle" x="1324" y="548"
+  >API / Webhook</text
+  ><rect fill="#F7FAFF" height="850" rx="14" stroke="#BCE" stroke-width="1.5" width="252" x="1380" y="86"
+  /><rect fill="#17357F" height="40" rx="20" width="176" x="1418" y="66"
+  /><text fill="#FFF" font-size="20" font-weight="700" text-anchor="middle" x="1506" y="93"
+  >整合系統</text
+  ><path d="M1404 182L1404 842" stroke="#3B62C4" stroke-width="2"
+  /><g marker-end="url(#e)" stroke="#3B62C4" stroke-width="2"
+  ><path d="M1404 182L1434 182"
+    /><path d="M1404 314L1434 314"
+    /><path d="M1404 446L1434 446"
+    /><path d="M1404 578L1434 578"
+    /><path d="M1404 710L1434 710"
+    /><path d="M1404 842L1434 842"
+  /></g
+  ><g
+  ><use transform="translate(1478,182)" xlink:href="#w"
+    /><text fill="#17357F" font-size="17" font-weight="700" x="1516" y="188"
+    >ERP</text
+    ><use transform="translate(1478,314)" xlink:href="#x"
+    /><text fill="#17357F" font-size="17" font-weight="700" x="1516" y="320"
+    >RPA</text
+    ><use transform="translate(1478,446)" xlink:href="#y"
+    /><text fill="#17357F" font-size="17" font-weight="700" x="1516" y="452"
+    >ECM</text
+    ><use transform="translate(1478,578)" xlink:href="#z"
+    /><text fill="#17357F" font-size="17" font-weight="700" x="1516" y="584"
+    >CRM</text
+    ><use transform="translate(1478,710) scale(0.9)" xlink:href="#o"
+    /><text fill="#17357F" font-size="17" font-weight="700" x="1516" y="708"
+    >Database</text
+    ><use transform="translate(1478,842)" xlink:href="#A"
+    /><text fill="#17357F" font-size="17" font-weight="700" x="1516" y="838"
+    >其他系統</text
+    ><text fill="#5A6B94" font-size="11.5" x="1516" y="858"
+    >(BPM / MES / KM)</text
+  ></g
+></svg
+>
