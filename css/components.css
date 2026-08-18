@@ -795,6 +795,26 @@
         border-left: 0.6rem solid transparent;
         transform: translateX(-50%);
     }
+   
+
+    /* Keep the rightmost language menu inside the viewport. */
+    .language-menu .language-submenu,
+    .language-menu.submenu-open .language-submenu {
+        right: var(--container-padding);
+        left: unset;
+        right: -6px;
+        max-width: calc(100vw - (var(--container-padding) * 2));
+        transform: none;
+    }
+
+    .language-menu .language-submenu::before {
+        right: 0.55rem;
+        left: auto;
+        transform: none;
+    }
+
+   
+      
 
     .has-submenu:hover .nav-submenu,
     .has-submenu:focus-within .nav-submenu,
