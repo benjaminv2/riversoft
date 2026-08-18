@@ -11,6 +11,7 @@
     --c-main: #1F2C5C;
     --c-sub: #2F4288;
     --c-accent: #38bdf8;
+    --c-danger:#d24444;
     --c-light: #fff;
     --c-dark: #434343;
     --c-border: #e2e8f0;
@@ -261,7 +262,9 @@ hr {
 .bg-accent {
     background-color: var(--c-accent);
 }
-
+.bg-danger {
+    background-color: var(--c-danger)!important;
+}
 .bg-dark {
     background-color: var(--c-dark);
 }

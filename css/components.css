@@ -145,7 +145,7 @@
     text-align: center;
     padding: 0.75rem 2rem;
     font-weight: 700;
-    color: var(--c-sub);
+    color: var(--c-light);
     margin-top: 1.5rem;
     background-color: var(--c-accent);
     border-radius: var(--radius-full);
@@ -187,29 +187,33 @@
     isolation: isolate;
 }
 
+.icon-composite > i:not(.icon-secondary) {
+    font-size: 1em;
+    line-height: 1;
+}
+
 .icon-composite > .icon-secondary {
     position: absolute;
     z-index: 2;
-    
+    top: calc(50% + var(--icon-secondary-offset-y, 0.3em));
+    left: calc(50% + var(--icon-secondary-offset-x, 0.3em));
     display: inline-flex;
     align-items: center;
     justify-content: center;
-   
+    width: var(--icon-secondary-box, 0.55em);
+    height: var(--icon-secondary-box, 0.55em);
     aspect-ratio: 1;
-    
+    padding: 0;
+    font-size: inherit;
     line-height: 1;
     color: var(--icon-secondary-color, var(--c-accent));
-    background-color: var(--icon-secondary-bg, #efefef);
+    background-color: var(--icon-secondary-bg, #e5e5e5);
     border-radius: var(--radius-full);
-    
-right: 0;
-    bottom: 0;
-    width: 0.72em;
-    height: 0.72em;
-    padding: 0;
-    font-size: 0.32em;
-    transform: translate(30%, 30%);
+    transform: translate(-25%, -50%);
+}
 
+.icon-composite > .icon-secondary::before {
+    font-size: var(--icon-secondary-size, 0.28em);
 }
 
 .icon-composite > .icon-badge {
@@ -295,12 +299,6 @@ right: 0;
 }
 
 .operation-icon > .icon-composite {
-    width: 100%;
-    --icon-secondary-right: 16%;
-    --icon-secondary-bottom: 18%;
-    --icon-secondary-box: 2.75rem;
-    --icon-secondary-padding: 0;
-    --icon-secondary-size: 1.7rem;
     --icon-secondary-color: var(--c-light);
     --icon-secondary-bg: var(--c-accent);
 }

@@ -360,7 +360,7 @@
 #agent-idp .card-style-5 {
     justify-content: center;
     border-color: #ffffff;
-    aspect-ratio: 6/6.4;
+    aspect-ratio: 6/8;
     /* color: red; */
     background: var(--c-light);
     border-radius: var(--radius-lg);
@@ -504,7 +504,7 @@
 }
 
 #agent-idp .hero-tex2 {
-    /* margin-bottom: 0.75rem; */
+    margin-bottom: 0.75rem;
     /* font-weight: 800; */
     /* margin-top: -18px; */
 }
