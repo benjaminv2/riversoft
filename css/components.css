@@ -190,19 +190,26 @@
 .icon-composite > .icon-secondary {
     position: absolute;
     z-index: 2;
-    right: var(--icon-secondary-right, 0.28em);
-    bottom: var(--icon-secondary-bottom, -0.12em);
+    
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: var(--icon-secondary-box, auto);
+   
     aspect-ratio: 1;
-    padding: var(--icon-secondary-padding, 0.45em);
-    font-size: var(--icon-secondary-size, 0.32em);
+    
     line-height: 1;
     color: var(--icon-secondary-color, var(--c-accent));
-    background-color: var(--icon-secondary-bg, var(--c-light));
+    background-color: var(--icon-secondary-bg, #efefef);
     border-radius: var(--radius-full);
+    
+right: 0;
+    bottom: 0;
+    width: 0.72em;
+    height: 0.72em;
+    padding: 0;
+    font-size: 0.32em;
+    transform: translate(30%, 30%);
+
 }
 
 .icon-composite > .icon-badge {

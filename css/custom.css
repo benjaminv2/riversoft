@@ -359,8 +359,15 @@
 
 #agent-idp .card-style-5 {
     justify-content: center;
-    border-color: var(--c-accent);
+    border-color: #ffffff;
     aspect-ratio: 6/6.4;
+    /* color: red; */
+    background: var(--c-light);
+    border-radius: var(--radius-lg);
+}
+#agent-idp .card-style-5 .icon-box {
+   color: var(--c-sub);
+   font-size: 4.6rem;
 }
 
 #agent-idp .text-h6.text-white {
@@ -378,12 +385,13 @@
 
 #agent-idp .card-style-3 {
     position: relative;
-    width: 160px;
-    gap: 1rem;
+    /* width: 160px; */
+    /* gap: 1rem; */
     padding: 0.8rem;
     background: var(--c-light);
     border: 3px solid var(--c-sub);
     border-radius: 1.5rem;
+    color: var(--c-sub);
 }
 
 #agent-idp .idp-workflow .step-number {
@@ -402,12 +410,12 @@
 }
 
 .video-wrap {
-    background:
-        /* 第一張圖：電視 (居中並往下偏移 154px，大小 53%) */
+    /* background:
+        
         url('../img/tv.png') center calc(50% + 154px) / 53% auto no-repeat,
 
-        /* 第二張圖：彩色泡泡 (全覆蓋底圖) */
-        url('../img/colored-bubbles-06.png') top center / 100% no-repeat;
+        
+        url('../img/colored-bubbles-06.png') top center / 100% no-repeat; */
 }
 
 /* =========================================
@@ -496,9 +504,9 @@
 }
 
 #agent-idp .hero-tex2 {
-    margin-bottom: 0.75rem;
-    font-weight: 800;
-    margin-top: -18px;
+    /* margin-bottom: 0.75rem; */
+    /* font-weight: 800; */
+    /* margin-top: -18px; */
 }
 
 
