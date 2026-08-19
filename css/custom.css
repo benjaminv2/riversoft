@@ -5,9 +5,153 @@
     margin-top: 0;
 }
 
+/* About - 技術研發時間軸（移植自客戶提供頁面） */
+.circle{display:none}
+#about .tech-timeline-section {margin: 3rem calc(var(--container-padding) * -1) 0;}
+#about .tech-timeline-section .timeline-title { color: #1e2c5c; text-align: center; }
+#about .tech-timeline-section .timeline-title .dot { color: #3db1e3; }
+#about .tech-timeline-section .timeline-scroll {
+    width: 95%;
+    margin-inline: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 3rem;
+}
+#about .tech-timeline-section .timeline-scroll::-webkit-scrollbar { display: none; }
+#about .tech-timeline-section .ht-gradation {position: relative;width: max-content;padding: 100px 0 30px;}
+#about .tech-timeline-section .ht-gradation::after { content: ""; position: absolute; width: 100%; height: 250px; background-color: #f1f5f7; left: 0; bottom: -28%; z-index: 1; }
+#about .tech-timeline-section .ht-gradation.style-01 {display: flex;margin-right: -15px;margin-left: -15px;gap: 0;/* justify-content: center; */}
+#about .tech-timeline-section .ht-gradation.style-01 .item {flex-grow: 1;position: relative;/* padding: 0 5px; */z-index: 2;flex-basis: 0;}
+#about .tech-timeline-section .ht-gradation.style-01 .item .line {width: 100%;height: 2px;/* background: #1e2c5c; */position: absolute;top: 28px;left: 50%;}
+#about .tech-timeline-section .ht-gradation.style-01 .item:last-child .line { display: none; }
+#about .tech-timeline-section .ht-gradation.style-01 .item .mask { opacity: 0; visibility: hidden; }
+#about .tech-timeline-section .ht-gradation.style-01 .item:hover .mask { opacity: 0; visibility: visible; }
+#about .tech-timeline-section .ht-gradation.style-01 .item:hover .circle { color: #fff; }
+#about .tech-timeline-section .ht-gradation.style-01 .content-wrap { position: relative; display: flex; flex-direction: column; align-items: center; }
+#about .tech-timeline-section .ht-gradation.style-01 .content-wrap.top {position: relative;top: -80%;left: 0;}
+#about .tech-timeline-section .ht-gradation.style-01 .circle-wrap {display: flex;position: relative;flex-direction: column;align-items: center;margin: 15px 0;}
+#about .tech-timeline-section .ht-gradation.style-01 .circle {--circle-opacity: 1;position: relative;z-index: 1;display: flex;align-items: center;justify-content: space-around;width: 210px;height: 30px;margin-bottom: 0;/* border-radius: 50%; */background-color: #fff;/* font-size: 18px; */transition: all .5s;transform: skew(-25deg, 0deg);/* gap: 0; */}
+#about .tech-timeline-section .ht-gradation.style-01 .circle[class*="color"] {
+    color: #fff;
+    background-color: rgb(var(--circle-rgb) / var(--circle-opacity));
+}
+#about .tech-timeline-section .ht-gradation.style-01 .circle.color01 { --circle-rgb: 61 177 227; }
+#about .tech-timeline-section .ht-gradation.style-01 .circle.color02 { --circle-rgb: 30 44 92; }
+#about .tech-timeline-section .ht-gradation.style-01 .circle.color03 { --circle-rgb: 240 199 56; }
+#about .tech-timeline-section .ht-gradation.style-01 .circle.color04 { --circle-rgb: 240 144 56; }
+#about .tech-timeline-section .ht-gradation.style-01 .circle.color05 { --circle-rgb: 120 104 223; }
+#about .tech-timeline-section .ht-gradation.style-01 .circle.color06 { --circle-rgb: 38 156 147; }
+#about .tech-timeline-section .ht-gradation.style-01 .circle.color07 { --circle-rgb: 255 150 63; }
+
+/* 每組色彩：第一次 100%、第二次 80%、第三次 70% */
+#about .tech-timeline-section .item:nth-child(4) .circle,
+#about .tech-timeline-section .item:nth-child(7) .circle,
+#about .tech-timeline-section .item:nth-child(9) .circle,
+#about .tech-timeline-section .item:nth-child(12) .circle { --circle-opacity: .7; }
+
+#about .tech-timeline-section .item:nth-child(5) .circle,
+#about .tech-timeline-section .item:nth-child(13) .circle { --circle-opacity: .5; }
+#about .tech-timeline-section .ht-gradation.style-01 .mask span { width: 1px; height: 0; margin: 0 auto; }
+#about .tech-timeline-section .ht-gradation.style-01 .mask span::before,
+#about .tech-timeline-section .ht-gradation.style-01 .mask span::after { opacity: 0; content: ""; display: block; position: absolute; width: 100px; height: 100px; top: 50%; left: 50%; background: #fff; border-radius: 50%; transform: translate(-50%, -50%); animation: gradationMask 3s linear infinite; }
+#about .tech-timeline-section .ht-gradation.style-01 .mask span:nth-child(2)::before { animation-delay: 1.2s; }
+#about .tech-timeline-section .ht-gradation.style-01 .mask span:nth-child(3)::before { animation-delay: 2.4s; }
+#about .tech-timeline-section .ht-gradation.style-01 .heading {letter-spacing: -1px;font-size: 30px;font-weight: 800;color: var(--c-sub);text-align: center;line-height: 0.7;}
+#about .tech-timeline-section .ht-gradation.style-01 .text {margin-top: 10px;font-size: 14px;line-height: 1.5;text-align: center;}
+
+@keyframes gradationMask {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 0; border-color: transparent; }
+}
+
+@media (max-width: 760px) {
+    #about .tech-timeline-section .timeline-scroll { width: 90%; overflow: visible; }
+    #about .tech-timeline-section .ht-gradation { width: 100%; }
+    #about .tech-timeline-section .ht-gradation::after { display: none; }
+    #about .tech-timeline-section .ht-gradation.style-01 { flex-direction: column; align-items: flex-end; padding: 50px 5% 30px; }
+    #about .tech-timeline-section .ht-gradation.style-01 .item { display: flex; align-items: flex-start; width: 60%; }
+    #about .tech-timeline-section .ht-gradation.style-01 .item .line { left: 33px; width: 3px; height: 100%; top: 15px; }
+    #about .tech-timeline-section .ht-gradation.style-01 .content-wrap { padding: 10px 0 20px 20px; }
+    #about .tech-timeline-section .ht-gradation.style-01 .content-wrap.top { top: 0; left: -206px; }
+    #about .tech-timeline-section .ht-gradation.style-01 .text { font-size: 13px; }
+}
+
 .card-2 {
     width: 100%;
     margin: 0 auto;
+}
+
+/* About - team cards */
+#about .team-group + .team-group {
+    margin-top: 3rem;
+}
+
+#about .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* gap: 1.5rem; */
+    gap: 2rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#about .team-card {
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    border-bottom: 8px solid var(--c-sub);
+}
+
+#about .team-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    object-position: center top;
+    color: var(--c-sub);
+    background: var(--c-bg);
+    font-size: 5rem;
+}
+
+#about .team-card-body {
+    padding: 1.25rem;
+}
+
+#about .team-card-body h4 {
+    margin-bottom: .5rem;
+}
+
+#about .team-group-operations .team-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+#about .team-group-operations .team-card {
+    grid-column: span 2;
+}
+
+#about .team-group-operations .team-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+#about .team-group-operations .team-photo {
+    aspect-ratio: 1 / 1;
+}
+
+@media (max-width: 760px) {
+    #about .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #about .team-group-operations .team-card,
+    #about .team-group-operations .team-card:nth-child(4) {
+        grid-column: auto;
+    }
 }
 
 .card-4 {
@@ -503,10 +647,11 @@
     font-weight: 900;
 }
 
-#agent-idp .hero-tex2 {
+#agent-idp .hero-tex2, #it-service .hero-tex2 {
     margin-bottom: 0.75rem;
     /* font-weight: 800; */
     /* margin-top: -18px; */
+    font-size: 5.5rem;
 }
 
 
@@ -546,6 +691,20 @@
 /* 淺色背景使用，確保標題文字與標記色都有足夠對比 */
 .highlight2 {
     background-image: linear-gradient(to top, #8bdcf76b 40%, transparent 40%);
+}
+
+/*about*/
+#about .card-style-1 .icon-box {
+    width: 8.15rem;
+    aspect-ratio: 1/1;
+    padding: 0;
+    font-size: 4.7rem;
+    /* color: var(--c-sub); */
+    /* background-color: var(--c-dark); */
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    letter-spacing: -0.3rem;
+    margin: 0 2rem;
 }
 
 /* =========================================
@@ -990,6 +1149,8 @@
         padding: 180px 0 70px;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
         transform: translateY(-8%);
+                min-height: 520px;
+
     }
 
     .hero-image {
