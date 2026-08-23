@@ -1,5 +1,5 @@
 /* =========================================
-   1. Shared layout adjustments
+   1. About page
    ========================================= */
 .first-fix {
     margin-top: 0;
@@ -61,28 +61,140 @@
 #about .tech-timeline-section .ht-gradation.style-01 .mask span:nth-child(3)::before { animation-delay: 2.4s; }
 #about .tech-timeline-section .ht-gradation.style-01 .heading {letter-spacing: -1px;font-size: 30px;font-weight: 800;color: var(--c-sub);text-align: center;line-height: 0.7;}
 #about .tech-timeline-section .ht-gradation.style-01 .text {margin-top: 10px;font-size: 14px;line-height: 1.5;text-align: center;}
-
+  
 @keyframes gradationMask {
     0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
     90% { opacity: 1; }
     100% { transform: translate(-50%, -50%) scale(1); opacity: 0; border-color: transparent; }
 }
 
-@media (max-width: 760px) {
-    #about .tech-timeline-section .timeline-scroll { width: 90%; overflow: visible; }
-    #about .tech-timeline-section .ht-gradation { width: 100%; }
-    #about .tech-timeline-section .ht-gradation::after { display: none; }
-    #about .tech-timeline-section .ht-gradation.style-01 { flex-direction: column; align-items: flex-end; padding: 50px 5% 30px; }
-    #about .tech-timeline-section .ht-gradation.style-01 .item { display: flex; align-items: flex-start; width: 60%; }
-    #about .tech-timeline-section .ht-gradation.style-01 .item .line { left: 33px; width: 3px; height: 100%; top: 15px; }
-    #about .tech-timeline-section .ht-gradation.style-01 .content-wrap { padding: 10px 0 20px 20px; }
-    #about .tech-timeline-section .ht-gradation.style-01 .content-wrap.top { top: 0; left: -206px; }
-    #about .tech-timeline-section .ht-gradation.style-01 .text { font-size: 13px; }
+@media (max-width: 767px) {
+    #about .tech-timeline-section {
+        margin-inline: 0;
+    }
+
+    #about .tech-timeline-section .timeline-scroll {
+        width: 100%;
+        padding: 1.5rem 1rem;
+        overflow: visible;
+    }
+
+    #about .tech-timeline-section .ht-gradation {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    #about .tech-timeline-section .ht-gradation::after {
+        display: none;
+    }
+
+    #about .tech-timeline-section .ht-gradation.style-01 {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0;
+        padding: 0;
+    }
+
+    #about .tech-timeline-section .ht-gradation.style-01 .item {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 56px minmax(0, 1fr);
+        column-gap: .75rem;
+        align-items: start;
+        width: 100%;
+        min-height: 7rem;
+        flex-basis: auto;
+    }
+
+    #about .tech-timeline-section .ht-gradation.style-01 .item .line {
+        top: 12px;
+        bottom: -12px;
+        left: 50%;
+        width: 2px;
+        height: auto;
+        background: transparent;
+        transform: translateX(-50%);
+    }
+
+    #about .tech-timeline-section .ht-gradation.style-01 .circle-wrap {
+        grid-column: 2;
+        grid-row: 1;
+        width: 56px;
+        height: 7rem;
+        margin: 0;
+        justify-content: center;
+    }
+
+    #about .tech-timeline-section .ht-gradation.style-01 .circle {
+        width: 7rem;
+        height: 24px;
+        border-radius: 0;
+        transform: rotate(90deg) skew(-25deg, 0deg);
+    }
+
+    #about .tech-timeline-section .ht-gradation.style-01 .content-wrap {
+        position: static;
+        grid-column: 1;
+        grid-row: 1;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0;
+        text-align: right;
+    }
+
+    #about .tech-timeline-section .ht-gradation.style-01 .content-wrap.top {
+        position: static;
+        grid-column: 3;
+        grid-row: 1;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0;
+        text-align: left;
+    }
+
+    #about .tech-timeline-section .ht-gradation.style-01 .heading {
+        font-size: 24px;
+        line-height: 1;
+        text-align: inherit;
+    }
+
+    #about .tech-timeline-section .ht-gradation.style-01 .text {
+        margin-top: .5rem;
+        font-size: 14px;
+        text-align: inherit;
+    }
 }
 
 .card-2 {
     width: 100%;
     margin: 0 auto;
+}
+
+/* About - development milestones */
+#about .card-style-1 .icon-box {
+    width: 8.15rem;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    margin: 0 2rem;
+    border-radius: var(--radius-full);
+    font-size: 4.7rem;
+    letter-spacing: -0.3rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    #about .card-1 {
+        grid-template-columns: 1fr;
+    }
+
+    #about .card-1 .card-style-1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about .card-1 .icon-box {
+        margin: 0 auto 1rem;
+    }
 }
 
 /* About - team cards */
@@ -146,13 +258,35 @@
     aspect-ratio: 1 / 1;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
     #about .team-grid {
         grid-template-columns: 1fr;
     }
 
+    #about .team-group-operations .team-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: .5rem;
+        width: 100%;
+    }
+
     #about .team-group-operations .team-card {
-        grid-column: auto;
+        grid-column: span 2;
+    }
+
+    #about .team-group-operations .team-card:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
+    #about .team-group-operations .team-card-body {
+        padding: .65rem .35rem;
+    }
+
+    #about .team-group-operations .team-card-body h4 {
+        font-size: .85rem;
+    }
+
+    #about .team-group-operations .team-card-body p {
+        font-size: .75rem;
     }
 }
 
@@ -161,6 +295,9 @@
     margin: 0 auto;
 }
 
+/* =========================================
+   2. IT service page
+   ========================================= */
 /* SI service overview */
 #it-service .service-overview-grid {
     width: 100%;
@@ -305,12 +442,12 @@
 }
 
 /* =========================================
-   2. Shared header and CTA
+   3. Shared header and CTA
    ========================================= */
 .site-header>a>img {
     width: 160px;
     height: auto;
-    /* padding-left: 0.8rem; */
+    padding-left: 0.8rem;
 }
 
 .hero-cta {
@@ -318,7 +455,26 @@
 }
 
 /* =========================================
-   3. OptimusQA cards and highlights
+   4. Optimus Agent
+   ========================================= */
+#optimus-agent .agent-list {
+    padding-inline-start: 1.25rem;
+}
+
+#optimus-agent .agent-list li {
+    list-style-position: outside;
+}
+#optimus-agent .card-style-2{
+    aspect-ratio:unset
+}
+@media (max-width: 767px) {
+    #optimus-agent .agent-box {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   5. OptimusQA cards and highlights
    ========================================= */
 #oqa .highlight,
 #oqa .highlight2 {
@@ -383,7 +539,7 @@
 }
 
 /* =========================================
-   4. AgentGo cards
+   6. AgentGo cards
    ========================================= */
 #agent-go .pain-point-grid .card-style-1 {
     flex-direction: column;
@@ -408,7 +564,7 @@
 }
 
 /* =========================================
-   5. Ticket-X cards and process
+   7. Ticket-X cards and process
    ========================================= */
 #ticket-x .card-style-2 {
     aspect-ratio: unset;
@@ -473,12 +629,17 @@
 }
 
 /* =========================================
-   6. Agentic IDP cards and carousel
+   8. Agentic IDP cards and carousel
    ========================================= */
+#agent-idp small {
+    display: block;
+}
+
 #agent-idp .hardware-carousel .case-card {
     flex-basis: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1.5;
     background: var(--c-light);
+    /* flex: calc((100% - 0.75rem) / 1.2); */
 }
 
 #agent-idp .case-card-content {
@@ -493,6 +654,7 @@
     color: var(--c-dark);
     border-left: 8px solid var(--c-accent);
     padding-left: 0.6rem;
+    /* white-space: nowrap; */
 }
 
 #agent-idp li {
@@ -506,14 +668,14 @@
 #agent-idp .card-style-5 {
     justify-content: center;
     border-color: #ffffff;
-    aspect-ratio: 6/7.9;
+    aspect-ratio: unset;
     /* color: red; */
     background: var(--c-light);
     border-radius: var(--radius-lg);
 }
 #agent-idp .card-style-5 .icon-box {
    color: var(--c-sub);
-   font-size: 4.6rem;
+   font-size: clamp(3rem, 12vw, 4.6rem);
 }
 
 #agent-idp .text-h6.text-white {
@@ -551,10 +713,30 @@
 }
 
 #agent-idp .hero .text-box {
-    width: 70%;
+    width: 100%;
     margin: 1rem auto 0;
 }
 
+@media (min-width: 768px) {
+    #agent-idp small {
+        display: inline;
+    }
+
+    #agent-idp .card-style-5 {
+        aspect-ratio: 6 / 7.9;
+    }
+
+    #agent-idp .card-style-5 .icon-box {
+        font-size: 4.6rem;
+    }
+
+    #agent-idp .hero .text-box {
+        width: 70%;
+    }
+    #agent-idp .hardware-carousel .case-card {
+    aspect-ratio: 1 / 1;
+}
+}
 .video-wrap {
     /* background:
         
@@ -565,7 +747,7 @@
 }
 
 /* =========================================
-   7. Center-image layouts
+   9. Center-image layouts
    ========================================= */
 #ticket-x .center-style {
     height: auto;
@@ -594,7 +776,7 @@
     background-image: url(../img/agent-go.png);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: contain;
+    background-size: 56%;
 }
 
 #agent-idp .center-style {
@@ -624,7 +806,7 @@
 }
 
 /* =========================================
-   8. Hero typography and highlights
+   10. Hero typography and highlights
    ========================================= */
 #oqa .hero-tex1 {
     margin-bottom: 0;
@@ -649,21 +831,29 @@
     font-weight: 900;
 }
 
-#agent-idp .hero-tex2, #it-service .hero-tex2 {
+#agent-idp .hero-tex2,
+#it-service .hero-tex2 {
     margin-bottom: 0.75rem;
-    /* font-weight: 800; */
-    /* margin-top: -18px; */
-    font-size: 5.5rem;
+    font-size: clamp(2.5rem, 11vw, 4rem);
 }
+
 
 
 #agent-idp .hero-tex3 {
     margin-bottom: 0.5rem;
     line-height: 1.6;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: clamp(1.05rem, 4vw, 1.6rem);
 }
+@media(max-width:767px){
+    #agent-idp .hero-tex3 br{
+        display:none
+    }
+    #agent-idp .hero-tex4 , #it-service .hero-tex4 {font-size: 1.8rem;}
+    #it-service .content-callout{min-height:150px;background:red;
+                               }
 
+}
 
 #agent-idp .hero-tex4 {
     margin-bottom: 0;
@@ -695,22 +885,21 @@
     background-image: linear-gradient(to top, #8bdcf76b 40%, transparent 40%);
 }
 
-/*about*/
-#about .card-style-1 .icon-box {
-    width: 8.15rem;
-    aspect-ratio: 1/1;
-    padding: 0;
-    font-size: 4.7rem;
-    /* color: var(--c-sub); */
-    /* background-color: var(--c-dark); */
-    border-radius: var(--radius-full);
-    white-space: nowrap;
-    letter-spacing: -0.3rem;
-    margin: 0 2rem;
+@media (max-width: 767px) {
+    .highlight,
+    .highlight2 {
+        display: inline;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        line-height: 1.15;
+        background-position: 0 0.1em;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
 }
 
 /* =========================================
-   9. Hero structure
+   11. Hero structure
    ========================================= */
 .hero-wrap {
     position: relative;
@@ -779,14 +968,14 @@
 .hero-image {
     position: relative;
     z-index: 3;
-    bottom: -29%;
-    width: min(90%, 30rem);
+    /* bottom: -29%; */
+    /* width: min(90%, 30rem); */
     margin: 0 auto;
     padding: 8px;
 }
 
 /* =========================================
-   10. Content spacing and media helpers
+   12. Content spacing and media helpers
    ========================================= */
 .white {
     background-color: #fff;
@@ -802,7 +991,7 @@
 }
 
 .text-box {
-    margin: 2.5rem auto;
+    margin: 1.5rem auto;
 }
 
 .text-box h2 {
@@ -816,7 +1005,7 @@
 }
 
 .section-padding-top {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
 }
 
@@ -847,7 +1036,7 @@
 }
 
 /* =========================================
-   11. Tablet enhancements (>= 768px)
+   13. Tablet enhancements (>= 768px)
    ========================================= */
 @media (min-width: 768px) {
     :root {
@@ -885,10 +1074,17 @@
         flex-direction: row;
         text-align: left;
     }
+
+    #agent-idp .hero-tex2,
+    #it-service .hero-tex2 {
+        font-size: 4.5rem;
+    }
+    
+ 
 }
 
 /* =========================================
-   12. Desktop enhancements (>= 1024px)
+   14. Desktop enhancements (>= 1024px)
    ========================================= */
 @media (min-width: 1024px) {
     :root {
@@ -897,6 +1093,11 @@
         --font-size-h3: 2rem;
         --font-size-h4: 1.5rem;
         --font-size-h5: 1.25rem;
+    }
+
+    #agent-idp .hero-tex2,
+    #it-service .hero-tex2 {
+        font-size: 5.5rem;
     }
 
     #optimus-agent .hero {
@@ -1042,7 +1243,8 @@
     }
 
     #agent-idp .case-card>img {
-        padding: 5rem;
+        /* padding: 5rem; */
+        width: 80%;
     }
 
     #ticket-x .center-style {
@@ -1104,7 +1306,7 @@
         letter-spacing: -13px;
     }
 
-    .agent-box {
+    #optimus-agent .agent-box {
         width: 85%;
         padding: 4rem;
         margin: 0 auto;
