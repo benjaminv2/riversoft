@@ -1,6 +1,7 @@
 const menuButton = document.querySelector('.menu-btn');
 const navigation = document.querySelector('#primary-navigation');
 const submenuItems = navigation ? [...navigation.querySelectorAll('.has-submenu')] : [];
+const productsItem = navigation?.querySelector('#products-submenu')?.closest('.has-submenu');
 
 if (menuButton && navigation) {
     const setMenuState = (isOpen) => {
@@ -11,6 +12,12 @@ if (menuButton && navigation) {
         const icon = menuButton.querySelector('i');
         icon?.classList.toggle('fa-bars', !isOpen);
         icon?.classList.toggle('fa-xmark', isOpen);
+
+        if (isOpen && window.innerWidth < 1024 && productsItem) {
+            closeSubmenus(productsItem);
+            productsItem.classList.add('submenu-open');
+            productsItem.querySelector(':scope > button[aria-controls]')?.setAttribute('aria-expanded', 'true');
+        }
     };
 
     const closeSubmenus = (exception = null) => {
