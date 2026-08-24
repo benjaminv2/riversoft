@@ -839,7 +839,7 @@
 
 
 
-#agent-idp .hero-tex3 {
+#agent-idp .hero-tex3, #it-service .hero-tex3  {
     margin-bottom: 0.5rem;
     line-height: 1.6;
     font-weight: 700;
