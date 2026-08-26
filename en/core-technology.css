@@ -1,0 +1,166 @@
+.optimus-agent-img {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.en-flow {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+    color: var(--c-main);
+    background: #fff;
+    border: 1px solid #dbe4f2;
+    border-radius: 1rem;
+    overflow-x: auto;
+}
+
+.flow-row,
+.flow-branch,
+.flow-support,
+.flow-route,
+.flow-branch-leaves {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+}
+
+.flow-node {
+    display: flex;
+    flex: 0 1 14rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 9rem;
+    min-height: 5rem;
+    padding: .85rem 1rem;
+    text-align: center;
+    background: #fff;
+    border: 2px solid var(--c-main);
+    border-radius: .8rem;
+}
+
+.flow-node span {
+    display: block;
+    margin-top: .25rem;
+    font-size: .9rem;
+    line-height: 1.35;
+}
+
+.flow-node-main {
+    color: #fff;
+    background: var(--c-main);
+}
+
+.flow-node-circle {
+    min-width: 8rem;
+    border-radius: 999px;
+}
+
+.flow-arrow {
+    flex: 0 0 auto;
+    color: var(--c-accent);
+    font-size: 1.5rem;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.flow-tag,
+.flow-zone-note {
+    color: var(--c-accent);
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.flow-branches,
+.flow-routes,
+.en-flow-mcp {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flow-branches {
+    flex: 1;
+}
+
+.flow-branch {
+    justify-content: flex-start;
+}
+
+.flow-branch .flow-node:first-child {
+    flex-basis: 18rem;
+}
+
+.flow-support {
+    margin-top: 1.25rem;
+}
+
+.flow-branch-leaves {
+    width: 100%;
+}
+
+.flow-branch-leaves .flow-node {
+    flex: 1;
+}
+
+.flow-row-routing {
+    min-width: 70rem;
+}
+
+.flow-route {
+    justify-content: flex-start;
+}
+
+.flow-zone-note {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.en-flow-architecture {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    min-width: 60rem;
+}
+
+@media (max-width: 767px) {
+    .en-flow {
+        padding: 1rem;
+        overflow-x: visible;
+    }
+
+    .en-flow-architecture,
+    .flow-row,
+    .flow-branch,
+    .flow-support,
+    .flow-route,
+    .flow-branch-leaves {
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .flow-node,
+    .flow-branch .flow-node:first-child {
+        flex: none;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+
+    .flow-arrow-down {
+        transform: none;
+    }
+
+    .flow-branches,
+    .flow-routes {
+        width: 100%;
+    }
+
+    .flow-row-routing {
+        min-width: 0;
+    }
+}
