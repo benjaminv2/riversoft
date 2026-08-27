@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/custom.css">
-    <link rel="stylesheet" href="core-technology.css">
     <link rel="stylesheet" href="css/en-fix.css">
 </head>
 
@@ -176,31 +175,10 @@
                         </div>
                     </div>
                     <div class="optimus-agent-img">
-                        <div class="en-flow en-flow-architecture" role="img"
-                            aria-label="User connects to Meta Agent, which uses Ontology, MCP and smart orchestration">
-                            <div class="flow-node">User</div>
-                            <div class="flow-arrow">→</div>
-                            <div class="flow-node flow-node-main"><strong>Meta Agent</strong><span>AI workflow</span>
-                            </div>
-                            <div class="flow-arrow">→</div>
-                            <div class="flow-branches">
-                                <div class="flow-branch">
-                                    <div class="flow-node"><strong>Ontology</strong><span>Precise, grounded
-                                            retrieval</span></div><span class="flow-arrow">→</span>
-                                    <div class="flow-node">Enterprise knowledge &amp; data</div>
-                                </div>
-                                <div class="flow-branch">
-                                    <div class="flow-node"><strong>MCP</strong><span>Connects to your existing
-                                            systems</span></div><span class="flow-arrow">→</span>
-                                    <div class="flow-node">Existing enterprise systems</div>
-                                </div>
-                                <div class="flow-branch">
-                                    <div class="flow-node"><strong>Frontier / Local / Hybrid</strong><span>De-identified
-                                            before it reaches a cloud model</span></div><span class="flow-tag">Smart
-                                        orchestration</span>
-                                </div>
-                            </div>
-                        </div>
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/agent-0_m_en.png">
+                            <img src="img/agent-0_en.png" alt="Meta Agent architecture">
+                        </picture>
                     </div>
                 </div>
             </section>
@@ -234,25 +212,10 @@
                                 <li>Every customer’s data and permissions are isolated from each other</li>
                             </ul>
                             <div class="optimus-agent-img col-span-12 md:col-span-12">
-                                <div class="en-flow" role="img" aria-label="Meta Agent Workflow">
-                                    <div class="flow-row">
-                                        <div class="flow-node">User:<span>describes the need in plain language</span>
-                                        </div>
-                                        <span class="flow-arrow">→</span>
-                                        <div class="flow-node">AI:<span>understands the request and assembles the
-                                                workflow</span></div>
-                                        <span class="flow-arrow">→</span>
-                                        <div class="flow-node flow-node-circle"><strong>Ontology</strong><span>builds
-                                                the workflow</span></div>
-                                        <span class="flow-arrow flow-arrow-pass">Pass →</span>
-                                        <div class="flow-node">Execute the task</div>
-                                        <span class="flow-arrow">→</span>
-                                        <div class="flow-node">Deliver the result</div>
-                                    </div>
-                                    <div class="flow-support"><span class="flow-tag">Fail ↺</span>
-                                        <div class="flow-node">Knowledge &amp; data</div>
-                                    </div>
-                                </div>
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/agent-1_m_en.png">
+                                    <img src="img/agent-1_en.png" alt="Meta Agent Workflow">
+                                </picture>
                             </div>
                         </div>
 
@@ -289,21 +252,10 @@
                                 <li>Multilingual — not tied to any one language</li>
                             </ul>
                             <div class="optimus-agent-img col-span-12 md:col-span-12">
-                                <div class="en-flow" role="img" aria-label="Ontology retrieval chain">
-                                    <div class="flow-row">
-                                        <div class="flow-node flow-node-circle">Question</div>
-                                        <span class="flow-arrow">→</span>
-                                        <div class="flow-node">Find semantically similar data</div>
-                                        <span class="flow-arrow">→</span>
-                                        <div class="flow-node"><strong>Ontology</strong><span>builds the workflow</span>
-                                        </div>
-                                        <span class="flow-arrow">→</span>
-                                        <div class="flow-node">Combine:<span>semantic match + conditions met</span>
-                                        </div>
-                                        <span class="flow-arrow">→</span>
-                                        <div class="flow-node">A grounded, explainable answer</div>
-                                    </div>
-                                </div>
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/agent-2_m_en.png">
+                                    <img src="img/agent-2_en.png" alt="Ontology retrieval chain">
+                                </picture>
                             </div>
                         </div>
 
@@ -332,17 +284,7 @@
                                 <li>Add capabilities by changing configuration, not by rewriting code</li>
                             </ul>
                             <div class="optimus-agent-img col-span-12 md:col-span-6">
-                                <div class="en-flow en-flow-mcp" role="img" aria-label="MCP universal adapter">
-                                    <div class="flow-node">AI Agent</div>
-                                    <span class="flow-arrow flow-arrow-down">↓</span>
-                                    <div class="flow-node flow-node-main">MCP universal adapter</div>
-                                    <span class="flow-arrow flow-arrow-down">↓</span>
-                                    <div class="flow-branch flow-branch-leaves">
-                                        <div class="flow-node">Order system</div>
-                                        <div class="flow-node">Inventory / Products</div>
-                                        <div class="flow-node">ERP / CRM</div>
-                                    </div>
-                                </div>
+                                <img src="img/agent-3_en.png" alt="MCP universal adapter">
                             </div>
                         </div>
 
@@ -380,33 +322,10 @@
                                     per-customer data isolation</li>
                             </ul>
                             <div class="optimus-agent-img col-span-12 md:col-span-12">
-                                <div class="en-flow en-flow-routing" role="img"
-                                    aria-label="Frontier, Local and Hybrid routing">
-                                    <div class="flow-row flow-row-routing">
-                                        <div class="flow-node">Enterprise user</div>
-                                        <span class="flow-arrow">→</span>
-                                        <div class="flow-node flow-node-main"><strong>Smart
-                                                orchestration</strong><span>assesses task and sensitivity</span></div>
-                                        <span class="flow-arrow">→</span>
-                                        <div class="flow-routes">
-                                            <div class="flow-route"><span class="flow-tag">Sensitive task</span>
-                                                <div class="flow-node"><strong>Local model</strong><span>Enterprise
-                                                        data</span></div>
-                                            </div>
-                                            <div class="flow-route"><span class="flow-tag">Complex reasoning</span>
-                                                <div class="flow-node">De-identify:<span>mask personal data</span></div>
-                                                <span class="flow-arrow">→</span>
-                                                <div class="flow-node"><strong>Frontier model</strong><span>Cloud</span>
-                                                </div><span class="flow-arrow">→</span>
-                                                <div class="flow-node">Re-identify</div>
-                                            </div>
-                                        </div>
-                                        <span class="flow-arrow">→</span>
-                                        <div class="flow-node flow-node-circle">Result</div>
-                                    </div>
-                                    <div class="flow-zone-note">Customer’s own environment · Re-identification mapping
-                                        stays on-premises</div>
-                                </div>
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/agent-4_m_en.png">
+                                    <img src="img/agent-4_en.png" alt="Frontier, Local and Hybrid smart orchestration">
+                                </picture>
                             </div>
                         </div>
 
