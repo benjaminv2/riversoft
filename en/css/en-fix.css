@@ -27,7 +27,9 @@ main h4.text-h4 {
 #optimus-agent .hero-wrap h1 .highlight2 {
     display: inline;
     margin: 0;
-    padding-bottom: 2px;
+    padding-bottom: 0px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+        background-image: linear-gradient(to top, #8bdcf76b 40%, transparent 40%);
+
 }
