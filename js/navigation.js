@@ -2,12 +2,16 @@ const menuButton = document.querySelector('.menu-btn');
 const navigation = document.querySelector('#primary-navigation');
 const submenuItems = navigation ? [...navigation.querySelectorAll('.has-submenu')] : [];
 const productsItem = navigation?.querySelector('#products-submenu')?.closest('.has-submenu');
+const isEnglishPage = document.documentElement.lang.toLowerCase().startsWith('en');
+const menuLabels = isEnglishPage
+    ? { open: 'Open navigation menu', close: 'Close navigation menu' }
+    : { open: '開啟導覽選單', close: '關閉導覽選單' };
 
 if (menuButton && navigation) {
     const setMenuState = (isOpen) => {
         navigation.classList.toggle('is-open', isOpen);
         menuButton.setAttribute('aria-expanded', String(isOpen));
-        menuButton.setAttribute('aria-label', isOpen ? '關閉導覽選單' : '開啟導覽選單');
+        menuButton.setAttribute('aria-label', isOpen ? menuLabels.close : menuLabels.open);
 
         const icon = menuButton.querySelector('i');
         icon?.classList.toggle('fa-bars', !isOpen);

@@ -248,7 +248,7 @@
     gap: 1.5rem;
     align-items: center;
     height: 100%;
-    padding: 1.5rem;
+    padding: 1.5rem 0.4rem;
     color: #ffffff;
     text-align: center;
     background-color: var(--c-sub);
@@ -640,6 +640,7 @@
     object-fit: cover;
     /* vertical-align: middle; */
     margin: 58px 0;
+    border-radius: var(--radius-lg);
 }
 
 .case-card-content {

@@ -5,11 +5,11 @@ h1 {
     font-weight: 900;
 }
 
-.hero-wrap h2 {
+#optimus-agent .hero-wrap h2 {
     font-size: 1.5rem;
 }
 
-main h2 {
+.text-box h2 , #ticket-x .highlight2, #agent-go .text-white{
     text-transform: uppercase;
 }
 
@@ -17,4 +17,17 @@ main h4.text-h4 {
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.9rem;
+}
+
+.card-style-2 .text-h5, .card-style-3 .text-h5, .card-style-5 .text-h5 {
+    line-height: 1.5rem;
+}
+#ticket-x .card-style-5{aspect-ratio:unset;}
+
+#optimus-agent .hero-wrap h1 .highlight2 {
+    display: inline;
+    margin: 0;
+    padding-bottom: 2px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
