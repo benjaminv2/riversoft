@@ -9,6 +9,7 @@
 .circle {
     display: none
 }
+.case-summary .btn-primary{margin-left:auto;}
 
 #about .tech-timeline-section {
     margin: 3rem calc(var(--container-padding) * -1) 0;
@@ -315,14 +316,14 @@
 
 .sort-label,
 .case-label {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #aba8a8;
     font-weight: bold;
     position: absolute;
     top: -11px;
     left: 1.5rem;
     z-index: 6;
-    padding: 0.75rem 1.1rem;
+    padding: 1.1rem;
     letter-spacing: 2px;
     line-height: 0;
     border-radius: 7px 0 7px 0;
@@ -335,43 +336,51 @@
 
 .sc-1 {
     background-color: var(--c-sub);
+    color:#fff!important;
 }
 
 .sc-2 {
     background-color: #F0C738;
+       color:#fff!important;
 }
 
 .sc-3 {
     background-color: #F09038;
+       color:#fff!important;
 }
 
 .sc-4 {
     background-color: #7868DF;
+       color:#fff!important;
 }
 
 .sc-5 {
     background-color: #269C93;
+       color:#fff!important;
 }
 
 .cases-card {
     position: relative;
     background-color: var(--c-light);
-    padding: 1.5rem 1.5rem 3.5rem;
+    padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 4px 9px rgba(31, 44, 92, .1);
     color: var(--c-dark);
 }
+.cases-card img{width:100%;max-width:unset;}
 
 .case-label {
     position: relative;
     border: 1px solid var(--c-dark);
     color: var(--c-dark);
-    border-radius: 7px;
+    border-radius: 20px;
     width: fit-content;
     left: unset;
     right: 0;
     margin: 1rem 0 0.25rem auto;
-
+}
+#news-detail .case-label {
+    /* margin: 1rem 0 0.25rem; */
 }
 
 .case-title {
@@ -382,9 +391,8 @@
 
 .case-summary {}
 
-#case-detail .case-label {
-    margin: 1rem auto 0.25rem 0;
-
+#case-detail .case-label, #news-detail .case-label {
+    margin: 2rem auto 1rem 0;
 }
 
 @keyframes gradationMask {
@@ -780,6 +788,18 @@
     #it-service .project-case-card {
         flex-basis: calc((100% - 1.25rem) / 2);
     }
+    .cases-card {
+    position: relative;
+    background-color: var(--c-light);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 9px rgba(31, 44, 92, .1);
+    color: var(--c-dark);
+}
+    #case-detail .cases-card,
+    #about-detail .cases-card,
+    #news-detail .cases-card
+    {padding:3.5rem;}
 }
 
 @media (max-width: 639px) {

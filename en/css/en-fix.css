@@ -1,5 +1,5 @@
 h1 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     line-height: .9;
     letter-spacing: -1px;
     font-weight: 900;
@@ -10,7 +10,7 @@ h1 {
 }
 
 .text-box h2 , #ticket-x .highlight2, #agent-go .text-white{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 main h4.text-h4 {
